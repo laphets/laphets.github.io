@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://laphets.com/"/>
-  <updated>2015-11-02T15:24:44.000Z</updated>
+  <updated>2015-11-02T15:38:56.000Z</updated>
   <id>http://laphets.com/</id>
   
   <author>
@@ -19,16 +19,46 @@
     <link href="http://laphets.com/2015/11/02/%E6%9D%AD%E4%BA%8C%E9%85%B1%E6%B2%B9%E8%AE%B0/"/>
     <id>http://laphets.com/2015/11/02/杭二酱油记/</id>
     <published>2015-11-02T15:17:57.000Z</published>
-    <updated>2015-11-02T15:24:44.000Z</updated>
-    <content type="html"><![CDATA[<p>终于或许结束了，从一开始的学军到今天的杭二，或许我没有学到许多知识，但却有了常人不容易有的经历。坐在颠簸的火车上，回想着杭二的一切，虽然只有短短的连一天都谈不上，但这一天里我却也明白了许多。比起杭二来说，我们学校只不过是一个处于乡村欠发达地区的弱校罢了，我们没有强大的师资力量，我们没有好的生源，我们更没有足够好的气氛来带动自身的学习，在这样的一种现实下，我想作为一个弱校的蒟蒻，或许会由于各种原因被虐，被D，被瞧不起，但是，既然我们出来了，就不能让别人由于瞧不起我们而瞧不起我们义中。我们是水平低，是弱，但这并不能表明我们会因此而不想上进，会因此而颓废，就像zbt说的那样，既然知道自己是弱，那就不能让自己一直这么弱下去。而我知道，现在离复赛的时间也不多了，因此，我需要做的只是珍惜这最后的来之不易的机会，在自己的OI生涯画上句号之前，好好珍惜在机房最后的时间，认真做好最后的每一道题，不要给退役后的自己留下任何遗憾。</p>
+    <updated>2015-11-02T15:38:56.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://ww1.sinaimg.cn/mw690/005P1zB8gw1exn214wzkbj31kw16owv2.jpg" alt="...."><br>终于或许结束了，从一开始的学军到今天的杭二，或许我没有学到许多知识，但却有了常人不容易有的经历。坐在颠簸的火车上，回想着杭二的一切，虽然只有短短的连一天都谈不上，但这一天里我却也明白了许多。比起杭二来说，我们学校只不过是一个处于乡村欠发达地区的弱校罢了，我们没有强大的师资力量，我们没有好的生源，我们更没有足够好的气氛来带动自身的学习，在这样的一种现实下，我想作为一个弱校的蒟蒻，或许会由于各种原因被虐，被D，被瞧不起，但是，既然我们出来了，就不能让别人由于瞧不起我们而瞧不起我们义中。我们是水平低，是弱，但这并不能表明我们会因此而不想上进，会因此而颓废，就像zbt说的那样，既然知道自己是弱，那就不能让自己一直这么弱下去。而我知道，现在离复赛的时间也不多了，因此，我需要做的只是珍惜这最后的来之不易的机会，在自己的OI生涯画上句号之前，好好珍惜在机房最后的时间，认真做好最后的每一道题，不要给退役后的自己留下任何遗憾。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>终于或许结束了，从一开始的学军到今天的杭二，或许我没有学到许多知识，但却有了常人不容易有的经历。坐在颠簸的火车上，回想着杭二的一切，虽然只有短短的连一天都谈不上，但这一天里我却也明白了许多。比起杭二来说，我们学校只不过是一个处于乡村欠发达地区的弱校罢了，我们没有强大的师资力]]>
+    <![CDATA[<p><img src="http://ww1.sinaimg.cn/mw690/005P1zB8gw1exn214wzkbj31kw16owv2.jpg" alt="...."><br>终于或许结束了，从一开始的学军到今天的杭二，或许我没有学到许多知识，但却有了常人不容易有的经]]>
     </summary>
     
       <category term="思索" scheme="http://laphets.com/tags/%E6%80%9D%E7%B4%A2/"/>
     
       <category term="感性" scheme="http://laphets.com/categories/%E6%84%9F%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[vijos1285 �Ѽѵ�ħ��ҩˮ]]></title>
+    <link href="http://laphets.com/2015/11/02/vijos1285%20%E4%BD%B3%E4%BD%B3%E7%9A%84%E9%AD%94%E6%B3%95%E8%8D%AF%E6%B0%B4/"/>
+    <id>http://laphets.com/2015/11/02/vijos1285 佳佳的魔法药水/</id>
+    <published>2015-11-02T09:17:57.000Z</published>
+    <updated>2015-11-02T15:31:34.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="��Ŀ����">��Ŀ����</h2><p>����n�и�ҩˮ�ļ۸�������ֻ�п���A+B�ϳ�C�����������ϳ�0��ҩˮ�����ٻ��Ѻͷ�����</p>
+<h2 id="��������">��������</h2><p>����ͼ��ģ�ͣ�������A��B��ת����C����ô����A.B��C����һ���ߣ�Ȼ����ֱ����dijkstra��ÿ��ȡ����С�Ļ���val[i]ȥ��������ҩˮ�Ļ��ѣ���Ȼ����������ҩˮ�������Ѿ����¹��˵ģ����ڷ������Ļ��˷�ԭ��һ�þ��ܳ����ˡ�</p>
+<h2 id="�ܽ�">�ܽ�</h2><blockquote>
+<p>��ν������·������һ��ֻ������ʵ�ʵġ�·”����Ŀ�в��õõ����ؼ��ǰ���Ŀת��Ϊͼ��ģ�ͣ��Ѹ�������ת��Ϊ��·��������û�ж�dijkstra�㷨̰�ĵľ�����������������ת��Ϊͼ��ģ�͵ġ�</p>
+</blockquote>
+<h2 id="����">����</h2><p>`</p>
+<p>#include<iostream></iostream></p>
+<p>#include<cstdio><br>using namespace std;<br>const int maxn=1000+10;<br>const int INF=0x7f7f7f;<br>int n,tot[maxn],val[maxn],a[maxn][maxn];<br>int x,y,z;<br>bool v[maxn];<br>int main()<br>{<br>    freopen(“1.sb”,”r”,stdin);<br>    scanf(“%d”,&amp;n);<br>    for(int i=0;i<n;i++) scanf("%d",&val[i]);="" for(int="" i="0;i<n;i++)" j="0;j<n;j++)" a[i][j]="n+1;" tot[i]="1;" while(cin="">&gt;x&gt;&gt;y&gt;&gt;z)<br>        a[x][y]=a[y][x]=z;<br>    for(int i=0;i<n;i++) {="" int="" minn="INF,k=0;" for(int="" j="0;j<n;j++)" if(!v[j]&&val[j]<minn)="" k="j;" }="" if(minn="=INF)" break;="" v[k]="true;" if(v[j]&&a[k][j]<n+1)="" if(val[a[k][j]]="">val[k]+val[j])<br>                {<br>                    val[a[k][j]]=val[k]+val[j];<br>                    tot[a[k][j]]=tot[k]<em>tot[j];<br>                }<br>                else if(val[a[k][j]]==val[k]+val[j])<br>                    tot[a[k][j]]+=tot[k]</em>tot[j];<br>            }</n;i++)></n;i++)></cstdio></p>
+<pre><code>}
+<span class="built_in">printf</span>(<span class="string">"%d %d"</span>,val[<span class="number">0</span>],tot[<span class="number">0</span>]);
+<span class="keyword">return</span> <span class="number">0</span>;
+</code></pre><p>}<br>`</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="��Ŀ����">��Ŀ����</h2><p>����n�и�ҩˮ�ļ۸�������ֻ�п���A+B�ϳ�C�����������ϳ�0��ҩˮ�����ٻ��Ѻͷ�����</p>
+<h2 id="��������">��������</h2><p>���]]>
+    </summary>
+    
+      <category term="ͼ��" scheme="http://laphets.com/tags/%CD%BC%EF%BF%BD%EF%BF%BD/"/>
+    
+      <category term="����" scheme="http://laphets.com/categories/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
     
   </entry>
   
@@ -348,33 +378,6 @@
       <category term="思索" scheme="http://laphets.com/tags/%E6%80%9D%E7%B4%A2/"/>
     
       <category term="感性" scheme="http://laphets.com/categories/%E6%84%9F%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://laphets.com/1940/10/24/vijos1285%20%E4%BD%B3%E4%BD%B3%E7%9A%84%E9%AD%94%E6%B3%95%E8%8D%AF%E6%B0%B4/"/>
-    <id>http://laphets.com/1940/10/24/vijos1285 佳佳的魔法药水/</id>
-    <published>1940-10-24T02:26:18.955Z</published>
-    <updated>2015-11-02T15:23:48.000Z</updated>
-    <content type="html"><![CDATA[<p>title: vijos1285 �Ѽѵ�ħ��ҩˮ<br>date: 2015-11-02 17:17:57<br>comments: true<br>tags: ͼ��<br>categories: ����</p>
-<h2 id="��Ŀ����">��Ŀ����</h2><p>����n�и�ҩˮ�ļ۸�������ֻ�п���A+B�ϳ�C�����������ϳ�0��ҩˮ�����ٻ��Ѻͷ�����</p>
-<h2 id="��������">��������</h2><p>����ͼ��ģ�ͣ�������A��B��ת����C����ô����A.B��C����һ���ߣ�Ȼ����ֱ����dijkstra��ÿ��ȡ����С�Ļ���val[i]ȥ��������ҩˮ�Ļ��ѣ���Ȼ����������ҩˮ�������Ѿ����¹��˵ģ����ڷ������Ļ��˷�ԭ��һ�þ��ܳ����ˡ�</p>
-<h2 id="�ܽ�">�ܽ�</h2><blockquote>
-<p>��ν������·������һ��ֻ������ʵ�ʵġ�·”����Ŀ�в��õõ����ؼ��ǰ���Ŀת��Ϊͼ��ģ�ͣ��Ѹ�������ת��Ϊ��·��������û�ж�dijkstra�㷨̰�ĵľ�����������������ת��Ϊͼ��ģ�͵ġ�</p>
-</blockquote>
-<h2 id="����">����</h2><p>`</p>
-<p>#include<iostream></iostream></p>
-<p>#include<cstdio><br>using namespace std;<br>const int maxn=1000+10;<br>const int INF=0x7f7f7f;<br>int n,tot[maxn],val[maxn],a[maxn][maxn];<br>int x,y,z;<br>bool v[maxn];<br>int main()<br>{<br>    freopen(“1.sb”,”r”,stdin);<br>    scanf(“%d”,&amp;n);<br>    for(int i=0;i<n;i++) scanf("%d",&val[i]);="" for(int="" i="0;i<n;i++)" j="0;j<n;j++)" a[i][j]="n+1;" tot[i]="1;" while(cin="">&gt;x&gt;&gt;y&gt;&gt;z)<br>        a[x][y]=a[y][x]=z;<br>    for(int i=0;i<n;i++) {="" int="" minn="INF,k=0;" for(int="" j="0;j<n;j++)" if(!v[j]&&val[j]<minn)="" k="j;" }="" if(minn="=INF)" break;="" v[k]="true;" if(v[j]&&a[k][j]<n+1)="" if(val[a[k][j]]="">val[k]+val[j])<br>                {<br>                    val[a[k][j]]=val[k]+val[j];<br>                    tot[a[k][j]]=tot[k]<em>tot[j];<br>                }<br>                else if(val[a[k][j]]==val[k]+val[j])<br>                    tot[a[k][j]]+=tot[k]</em>tot[j];<br>            }</n;i++)></n;i++)></cstdio></p>
-<pre><code>}
-<span class="built_in">printf</span>(<span class="string">"%d %d"</span>,val[<span class="number">0</span>],tot[<span class="number">0</span>]);
-<span class="keyword">return</span> <span class="number">0</span>;
-</code></pre><p>}<br>`</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>title: vijos1285 �Ѽѵ�ħ��ҩˮ<br>date: 2015-11-02 17:17:57<br>comments: true<br>tags: ͼ��<br>categories: ����</p>
-<h2 id="��Ŀ����">��Ŀ����</]]>
-    </summary>
     
   </entry>
   
