@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://laphets.com/"/>
-  <updated>2015-12-14T06:56:26.218Z</updated>
+  <updated>2015-11-14T07:01:10.609Z</updated>
   <id>http://laphets.com/</id>
   
   <author>
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[再见 OI！]]></title>
-    <link href="http://laphets.com/2015/12/14/%E5%86%8D%E8%A7%81%20OI%EF%BC%81/"/>
-    <id>http://laphets.com/2015/12/14/再见 OI！/</id>
-    <published>2015-12-14T06:47:42.000Z</published>
-    <updated>2015-12-14T06:56:26.218Z</updated>
+    <link href="http://laphets.com/2015/11/14/%E5%86%8D%E8%A7%81%20OI%EF%BC%81/"/>
+    <id>http://laphets.com/2015/11/14/再见 OI！/</id>
+    <published>2015-11-14T06:47:42.000Z</published>
+    <updated>2015-11-14T07:01:10.609Z</updated>
     <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/mw690/005P1zB8gw1ey0i8dcjggj31kw0w0wor.jpg" alt="...."></p>
 <p><img src="http://ww4.sinaimg.cn/mw690/005P1zB8gw1ey0i9mdw8mj31g02kge81.jpg" alt="...."></p>
 <h2 id="写在赛后两天">写在赛后两天</h2><p>洛谷的民间数据出来了，貌似只有290？（100+100+0+60+10+20）。Day1T3 hash表没初始化，全炸了？Day2T1 写堆貌似贪心是错的？Day2T2 DP不会打又炸了？Day2T3 不会傻逼枚举然后贪心贪错了，直接20分搞到滚粗？290分在FJ能搞到省二左右（也是踩线），ZJ目测就直接出局了。</p>
