@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://laphets.com/"/>
-  <updated>2015-12-06T14:02:26.281Z</updated>
+  <updated>2015-12-06T14:09:21.890Z</updated>
   <id>http://laphets.com/</id>
   
   <author>
@@ -19,10 +19,10 @@
     <link href="http://laphets.com/2015/12/06/%E5%86%99%E5%9C%A8NOIP2015%E5%A4%8D%E8%B5%9B%E4%B9%8B%E5%89%8D/"/>
     <id>http://laphets.com/2015/12/06/写在NOIP2015复赛之前/</id>
     <published>2015-12-06T13:58:42.000Z</published>
-    <updated>2015-12-06T14:02:26.281Z</updated>
-    <content type="html"><![CDATA[<h3 id="现在是2015年11月6日，再过一天就是2015年10月7日">现在是2015年11月6日，再过一天就是2015年10月7日</h3><h3 id="明天就是NOIP2015初赛day1的日子">明天就是NOIP2015初赛day1的日子</h3><h3 id="yzy加油_lzw加油_zbt加油_chp加油_lwq加油！">yzy加油 lzw加油 zbt加油 chp加油 lwq加油！</h3><h3 id="YZOI加油！">YZOI加油！</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(rp=<span class="number">1</span>;;rp+=INF);</span><br></pre></td></tr></table></figure>]]></content>
+    <updated>2015-12-06T14:09:21.890Z</updated>
+    <content type="html"><![CDATA[<h3 id="现在是2015年11月6日，再过一天就是2015年10月7日">现在是2015年11月6日，再过一天就是2015年10月7日</h3><h3 id="明天就是NOIP2015复赛day1的日子">明天就是NOIP2015复赛day1的日子</h3><h3 id="yzy加油_lzw加油_zbt加油_chp加油_lwq加油！">yzy加油 lzw加油 zbt加油 chp加油 lwq加油！</h3><h3 id="YZOI加油！">YZOI加油！</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(rp=<span class="number">1</span>;;rp+=INF);</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
-    <![CDATA[<h3 id="现在是2015年11月6日，再过一天就是2015年10月7日">现在是2015年11月6日，再过一天就是2015年10月7日</h3><h3 id="明天就是NOIP2015初赛day1的日子">明天就是NOIP2015初赛day1的日子</h3><h3 id="]]>
+    <![CDATA[<h3 id="现在是2015年11月6日，再过一天就是2015年10月7日">现在是2015年11月6日，再过一天就是2015年10月7日</h3><h3 id="明天就是NOIP2015复赛day1的日子">明天就是NOIP2015复赛day1的日子</h3><h3 id="]]>
     </summary>
     
       <category term="思索" scheme="http://laphets.com/tags/%E6%80%9D%E7%B4%A2/"/>
