@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://laphets.com/"/>
-  <updated>2015-12-19T14:42:21.577Z</updated>
+  <updated>2015-12-20T04:54:20.878Z</updated>
   <id>http://laphets.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://laphets.com/2015/12/19/%E3%80%8A%E6%98%9F%E7%A9%BA%E6%97%A5%E8%AE%B0%E3%80%8B%20-%20%E5%86%8D%E8%A7%81%E7%8E%B0%E5%AE%9E%EF%BC%8C%E4%BD%A0%E5%A5%BD%E6%98%9F%E7%A9%BA%EF%BC%81/"/>
     <id>http://laphets.com/2015/12/19/《星空日记》 - 再见现实，你好星空！/</id>
     <published>2015-12-19T14:02:20.000Z</published>
-    <updated>2015-12-19T14:42:21.577Z</updated>
+    <updated>2015-12-20T04:54:20.878Z</updated>
     <content type="html"><![CDATA[<p><img src="http://i4.tietuku.com/ddb72ab39a8f3025.png" alt="星空日记"></p>
 <blockquote>
 <p><strong>It is not reality that inspires your dreams,but your dreams that inspires reality.</strong></p>
@@ -42,6 +42,10 @@
 <blockquote>
 <p><strong>It is not reality that inspires your dreams]]>
     </summary>
+    
+      <category term="电影" scheme="http://laphets.com/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+      <category term="感性" scheme="http://laphets.com/categories/%E6%84%9F%E6%80%A7/"/>
     
   </entry>
   
