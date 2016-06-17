@@ -1,11 +1,16 @@
 <!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+
+
+
   
 
-<meta charset="UTF-8"/>
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -18,17 +23,54 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
 
 
 
 
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
 
 
 
@@ -36,7 +78,12 @@
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
 
 
 <meta name="description">
@@ -50,29 +97,31 @@
 <meta name="twitter:description">
 
 
+
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post'
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
 
+
+
+  <link rel="canonical" href="http://laphets.com/"/>
 
   <title> laphets's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -80,22 +129,33 @@
 
 
 
-  <div class="container one-column 
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
    page-home 
-">
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
       <span class="site-title">laphets's Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
 
 <div class="site-nav-toggle">
   <button>
@@ -109,50 +169,39 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
             首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            <i class="menu-item-icon icon-next-categories"></i> <br />
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            <i class="menu-item-icon icon-next-about"></i> <br />
-            关于
           </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
             归档
           </a>
         </li>
       
-
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
       
+
       
     </ul>
   
@@ -165,95 +214,129 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content"> 
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/19/《星空日记》 - 再见现实，你好星空！/" itemprop="url">
-                《星空日记》 - 再见现实，你好星空！
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-19T22:02:20+08:00" content="2015-12-19">
-            2015-12-19
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/19/《星空日记》 - 再见现实，你好星空！/" itemprop="url">
+                  《星空日记》 - 再见现实，你好星空！
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-19T22:02:20+08:00" content="2015-12-19">
+              2015-12-19
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/12/19/《星空日记》 - 再见现实，你好星空！/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/《星空日记》 - 再见现实，你好星空！/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/19/《星空日记》 - 再见现实，你好星空！/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/《星空日记》 - 再见现实，你好星空！/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
+          
 
-It is not reality that inspires your dreams,but your dreams that inspires reality.
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
 
 
+    <div class="post-body" itemprop="articleBody">
 
+      
+      
 
-
-摘一颗星星，首先，你要有一把椅子。然后，你要有一个夹子，星星很烫，不能直接用手摘。
-我们会拿什么定义一个人，是他所处的位置？不，是他前进的方向。
-笑完了，又能怎么样呢？一百多年了，我们这些人就是在别人笑完了之后，才来到这
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/19/《星空日记》 - 再见现实，你好星空！/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+      
         
+          
+            <p><img src="http://i4.tietuku.com/ddb72ab39a8f3025.png" alt="星空日记"></p>
+<blockquote>
+<p><strong>It is not reality that inspires your dreams,but your dreams that inspires reality.</strong></p>
+</blockquote>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=1476106&auto=0&height=66"></iframe>
+
+
+<ul>
+<li><strong>摘一颗星星，首先，你要有一把椅子。然后，你要有一个夹子，星星很烫，不能直接用手摘。</strong></li>
+<li><strong>我们会拿什么定义一个人，是他所处的位置？不，是他前进的方向。</strong></li>
+<li><strong>笑完了，又能怎么样呢？一百多年了，我们这些人就是在别人笑完了之后，才来到这里的。</strong></li>
+<li><strong>像我这种生下来就没有抓到一手好牌的人，只能打好手里的烂牌。面对现实，才是我正确的路。</strong></li>
+<li><strong>梦，才是最真的现实。</strong></li>
+<li><strong>我一直在逼自己长大，逼自己走正确的路，北大不厌其烦地对我耳语了四年，现在我才听清：“不是现实支撑了梦想，而是梦想支撑了你的现实。</strong></li>
+<li><strong>如果，人只能活一次。就让现实比梦想，高那么一点吧！</strong> </li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -273,80 +356,107 @@ It is not reality that inspires your dreams,but your dreams that inspires realit
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/19/清晰（四）·不复/" itemprop="url">
-                清晰（四）·不复
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-19T20:37:13+08:00" content="2015-12-19">
-            2015-12-19
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/19/清晰（四）·不复/" itemprop="url">
+                  清晰（四）·不复
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-19T20:37:13+08:00" content="2015-12-19">
+              2015-12-19
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/12/19/清晰（四）·不复/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（四）·不复/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            刚好是一个月，一个月前的今天，我扫兴地从衢州回来，回到久违的教室。一个月后，猛然在机房看到二等的名单，同样的扫兴。我一直用CE炸了等借口来蒙骗自己，而事实上，也只有我才能知道，比赛前的那些个日日夜夜我并没有付出自己最大的努力，甚至都不足以使自己的内心得到舒坦。而我，或许也明白了什么，至少，我不会再在机房打游戏、聊天、干无关的事，至少，我也不会令自己的脑中充斥无关的情绪与想法（而事实证明这一点貌似我
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/19/清晰（四）·不复/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/19/清晰（四）·不复/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（四）·不复/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <pre><code>刚好是一个月，一个月前的今天，我扫兴地从衢州回来，回到久违的教室。一个月后，猛然在机房看到二等的名单，同样的扫兴。我一直用CE炸了等借口来蒙骗自己，而事实上，也只有我才能知道，比赛前的那些个日日夜夜我并没有付出自己最大的努力，甚至都不足以使自己的内心得到舒坦。而我，或许也明白了什么，至少，我不会再在机房打游戏、聊天、干无关的事，至少，我也不会令自己的脑中充斥无关的情绪与想法（而事实证明这一点貌似我做不到）。可毕竟，当我懂得知识，一切都已不复。
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -366,81 +476,115 @@ It is not reality that inspires your dreams,but your dreams that inspires realit
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/19/清晰（三）·释然/" itemprop="url">
-                清晰（三）·释然
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-19T20:25:26+08:00" content="2015-12-19">
-            2015-12-19
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/19/清晰（三）·释然/" itemprop="url">
+                  清晰（三）·释然
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-19T20:25:26+08:00" content="2015-12-19">
+              2015-12-19
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/12/19/清晰（三）·释然/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（三）·释然/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            知道成绩了，没能像想象中那样翻盘，心里还是挺空落的。不止一次地觉得自己弱，自己水，特别是当每次做题被卡，或是看到别人获了什么奖，拿了什么牌时，心里就特别不是滋味。一项奋斗了这么长时间的东西，最终却没有得到自己想要的结果，败兴而归，是多么的遗憾啊。
-“当时选择了这条路的我，就是奔着单纯的拿奖去的吗？”我也曾不止一次地这样问过自己，而事实上，我也找不出答案。仔细回顾这一年的时光，发现除了刚开始那段，一
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/19/清晰（三）·释然/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/19/清晰（三）·释然/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（三）·释然/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <p>知道成绩了，没能像想象中那样翻盘，心里还是挺空落的。不止一次地觉得自己弱，自己水，特别是当每次做题被卡，或是看到别人获了什么奖，拿了什么牌时，心里就特别不是滋味。一项奋斗了这么长时间的东西，最终却没有得到自己想要的结果，败兴而归，是多么的遗憾啊。</p>
+<p><strong>“当时选择了这条路的我，就是奔着单纯的拿奖去的吗？”</strong>我也曾不止一次地这样问过自己，而事实上，我也找不出答案。仔细回顾这一年的时光，发现除了刚开始那段，一级最后比赛前目标清晰过外，其余的，大多是在浑浑噩噩，目标模糊中度过的。而现在的我，却更加感触不到未来，感触不到理想，甚至，开始变得麻木，变得适从。<strong>我讨厌这种失去方向失去理想，而只能每天在相同的循环中度过却无法改变的感觉！</strong>一个东西，当你曾经拥有并视之如命，而突然之间，突然得你都无法确切感知到，它便失去了踪影，任你怎么寻都无法寻到，或许，现在的我也正是这样一种感受。</p>
+<p>我的脑海中，能清晰地记得那个夜晚，一个人独自随坐在机房的讲台上，昏暗的灯光下，津津有味地看着NOI导刊中的线段树，感受着每一次思维的运转；我更加能记得，那些个无数的下午，晚上，我们6个人（gxy,yzy,zsh,ysy,wkw和我）在机房里，占据了前三排，听课，打题，或是不时地聊聊天，使冻结了的空气中，也有了一丝暖气。这一切的一切，便好似昨天刚刚发生过，而现在看来，真是恍如隔世。</p>
+<blockquote>
+<p><strong>“放慢所有 回忆里的感受 只怕听见 谁忽然泪流 那些曾经 不经事的哀愁  如今是最愉快的拥有”</strong></p>
+</blockquote>
+<p>（不知道是巧合还是啥，敲到这里的时候就刚刚听到这段歌词）。<strong>或许，回忆也不仅仅只能带给人伤痛，每一个无比清晰的片刻，每一个一起奋斗过的好友，以及那早已被敲得掉了字的键盘和满是污渍的鼠标，都让我真真实实地感受到时间的流逝，感受到灵感突来的欣喜，以及获得新知的激动。</strong>现在的我，也足以能够欣慰地回味这一年所经历的一切，并自豪地对别人说：“我用相同的时间，领略到了另一个世界！”这或许才是OI真正的魅力所在：看着每一次的提交由红色的Wrong Answer，变成绿色的Accept，由一百或是几十的分数，一步一步地爬升到300，以及那一次次走上讲台评测时，掩盖不住内心激动的沉着，这才是兴奋，才是喜悦，才是成长！</p>
+<p>遗憾的是，现在的我要向OI道别了，而我也无从知道下次相见会是何时，亦或是，后会无期。正如鲁迅先生所说（果真被语文老师说中了……），真的猛士，敢于直面惨淡的人生，敢于正视淋漓的鲜血。<strong>文化课固然是枯燥无味而又寥寥无期的，而正是这一天天未曾间断的求索，才给予了你终有一天的辉煌。造化是为庸人所设计的，而也只有庸人，才会被动地屈服，顺从于眼前的一切。每个人，都不想成为庸人，自然，我也不想。</strong></p>
+<p>新的一切都还在未来的路上等着你，而那一切，也只有顽强，勇毅而又不失聪慧的人才能得的到，So,just fighting!</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -460,81 +604,108 @@ It is not reality that inspires your dreams,but your dreams that inspires realit
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/19/清晰（二）·恍惚/" itemprop="url">
-                清晰（二）·恍惚
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-19T20:25:13+08:00" content="2015-12-19">
-            2015-12-19
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/19/清晰（二）·恍惚/" itemprop="url">
+                  清晰（二）·恍惚
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-19T20:25:13+08:00" content="2015-12-19">
+              2015-12-19
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/12/19/清晰（二）·恍惚/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（二）·恍惚/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-             若有所失，我到底失去了什么？失去继续为自己所喜欢的东西奋斗的机会？或者是自己最初的梦想？我口口声声对着自己说忘怀，而最终记忆仍是会如流水般袭上心来。有些回忆难免是悲伤的，而同时，也值得深思。
-NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都过得无比寻常，早上浑浑噩噩的起床，去教室，再去食堂，每天总会有各种不断的作业、参考书去刷，正如被困进了一个while(1)的循环一般，无法
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/19/清晰（二）·恍惚/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/19/清晰（二）·恍惚/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（二）·恍惚/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <pre><code> 若有所失，我到底失去了什么？失去继续为自己所喜欢的东西奋斗的机会？或者是自己最初的梦想？我口口声声对着自己说忘怀，而最终记忆仍是会如流水般袭上心来。有些回忆难免是悲伤的，而同时，也值得深思。
+NOIP2015过去<span class="number">4</span>天，也正是我回到文化课的第<span class="number">4</span>天。这<span class="number">4</span>天，每天都过得无比寻常，早上浑浑噩噩的起床，去教室，再去食堂，每天总会有各种不断的作业、参考书去刷，正如被困进了一个<span class="keyword">while</span>(<span class="number">1</span>)的循环一般，无法逃脱。而事实上，当你处于习惯某种生活方式的过程中，你的新鲜感，你的意志，都在无时无刻的消磨。直到最后，你似乎忘记了时间的流逝，所有的记忆都变为寻常而毫无亮点，大脑中唯一记得的，或许也只剩下上次考试自己的成绩与名次，这，才是最可悲的。而我，却也不知道，还能使自己保持多长时间的斗志，至少在今天，我看到了自己斗志的消磨。文化课的学习固然是缺乏新意的，繁琐的知识，鬼畜的数据，以及刷不完的题目。这些东西都无时无刻地不在耗费着你的精神，考验着你的耐性。在这种时候，我想，我更应该在百无聊赖中发掘着新意，更应该在百无聊赖中发掘新意，更应该释放出获得新知的喜悦以及做出题目的欣慰。因为，这，或许才是文化课最后的魅力所在。只愿，最后不被平庸所麻痹。
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -554,81 +725,111 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/19/清晰（一）·忽梦/" itemprop="url">
-                清晰（一）·忽梦
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-19T20:24:19+08:00" content="2015-12-19">
-            2015-12-19
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/19/清晰（一）·忽梦/" itemprop="url">
+                  清晰（一）·忽梦
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-19T20:24:19+08:00" content="2015-12-19">
+              2015-12-19
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/12/19/清晰（一）·忽梦/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（一）·忽梦/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            洛谷的民间数据出来了，貌似只有290？（100+100+0+60+10+20）。Day1T3 hash表没初始化，全炸了？Day2T1 写堆貌似贪心是错的？Day2T2 DP不会打又炸了？Day2T3 不会傻逼枚举然后贪心贪错了，直接20分搞到滚粗？290分在FJ能搞到省二左右（也是踩线），ZJ目测就直接出局了。
-这两天过得真的很难受，各种想法都在脑子里浮现：辛辛苦苦努力了一年然后省三滚粗了？以后
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/19/清晰（一）·忽梦/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/19/清晰（一）·忽梦/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/19/清晰（一）·忽梦/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <p>洛谷的民间数据出来了，貌似只有290？（100+100+0+60+10+20）。Day1T3 hash表没初始化，全炸了？Day2T1 写堆貌似贪心是错的？Day2T2 DP不会打又炸了？Day2T3 不会傻逼枚举然后贪心贪错了，直接20分搞到滚粗？290分在FJ能搞到省二左右（也是踩线），ZJ目测就直接出局了。</p>
+<p>这两天过得真的很难受，各种想法都在脑子里浮现：辛辛苦苦努力了一年然后省三滚粗了？以后永远只能待在教室里敲不了代码了？自己想的拿个省一然后自招都是幻想？学校弱自己弱却无法改变？ 一切的一切都使我颓废不已，我是真的弱，真的水，真的粗心，明明好不容易有了一个机会，却白白浪费掉了，我要怎么向陈老师去交代，怎么向学长交代，怎么向自己交代？同时，文化课也让我变得十分迷茫，逃了这么多的课，漏了不知道多少东西，各种题目都不会，做出来是错的，已然感觉要双向滚粗了。我能明明白白感受到只有唯一一次机会却失去后而无法弥补的悲哀。我整天想着最后成绩出来了拿了个三=怎么见人，口口声声说着自己弱，经常都颓丧得趴在桌子上想着自己当时写题的时候怎么那么水，状态那么差，各种遗憾之类的。而事实上，这又能有什么用？准确来说，没有半点卵用都没有。去衢州这一次真的就是彻彻底底的失败，就是铩羽而归，而我又能改变得了什么？难不成我有办法去改源码，去改CCF的数据？<strong>既然已经失去了一次机会，那就更应该去珍惜去利用现在眼前的一切，而不该在未来的高考之后再去后悔此刻时光的弥足珍贵，去埋怨现在的自己没有好好努力，而是很傻逼的在后悔、在遗憾早已无法改变的东西。</strong>我也更能相信，将来的我也一定不会喜欢看到现在颓废的我的。</p>
+<p><strong>高考750分，把人生变成750岁；OI600分，让记忆只剩下1S，128MB</strong>我应该庆幸当时的自己没有错过OI这有趣的东西，能让自己在高中有过这样一段弥足珍贵的时光，更能接触到许许多多的算法，领略到与别人完全不同的东西，<strong>就算最终现实与梦想背道而驰，我也应该为自己有过这样的一段为梦想而执着过的经历而感到高兴</strong>。</p>
+<p>接着我就该退役了，想想自己当时在机房黑板上大大写着的”NOIP2015 RP++”的话还是感觉挺好笑的。也正像Day2的解压密码”2016Xia%MY@jian”虽然我不能坚持到2016夏天与你再见，但我仍会一直记得，<strong>我曾经也是个OIer，虽然未曾成功，虽然抱有遗憾，但我也确确实实是广大为自己梦想而执着的OIer中的那一个，并且会为在高中有过这样一段拼搏的时光而感到欣喜与骄傲！</strong></p>
+<p>最后，我要给马上回到文化课忙忙碌碌学习中的自己打气，这一段时光同样也是弥足珍贵的，just fighting！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -648,82 +849,109 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/28/初涉C制作扫雷游戏/" itemprop="url">
-                初涉C#制作扫雷游戏
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-28T01:33:57+08:00" content="2015-11-28">
-            2015-11-28
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/理性/" itemprop="url" rel="index">
-                  <span itemprop="name">理性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/11/28/初涉C制作扫雷游戏/" itemprop="url">
+                  初涉C#制作扫雷游戏
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-11-28T01:33:57+08:00" content="2015-11-28">
+              2015-11-28
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/11/28/初涉C制作扫雷游戏/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/28/初涉C制作扫雷游戏/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/理性/" itemprop="url" rel="index">
+                    <span itemprop="name">理性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            起因最近OI退役了，文化课滚粗了，感觉无事可做，于是便准备用C#来搞搞开发。在这篇文章里我只想浅略的谈一谈我的代码实现过程，至于详细的制作，请参阅这篇博文。同时我也要给这位写教程的学长好评，真的是超详细，太赞啦！
-代码托管该项目的代码我已经托管在GitHub上，大家可以自行查看，有什么值得改进的地方欢迎向我指出。
-正文雷区绘制的有关技术问题Settings.settings的相关操作UpdateS
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/28/初涉C制作扫雷游戏/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/11/28/初涉C制作扫雷游戏/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/28/初涉C制作扫雷游戏/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <h2 id="起因">起因</h2><p>最近OI退役了，文化课滚粗了，感觉无事可做，于是便准备用C#来搞搞开发。在这篇文章里我只想浅略的谈一谈我的代码实现过程，至于详细的制作，请参阅这篇<em><a href="http://www.ivy-end.com/archives/1704" target="_blank" rel="external">博文</a></em>。同时我也要给这位写教程的学长好评，真的是超详细，太赞啦！</p>
+<h2 id="代码托管">代码托管</h2><p>该项目的代码我已经托管在<strong><a href="https://github.com/laphets/Minesweeper" target="_blank" rel="external">GitHub</a></strong>上，大家可以自行查看，有什么值得改进的地方欢迎向我指出。</p>
+<h2 id="正文">正文</h2><h3 id="雷区绘制的有关技术问题">雷区绘制的有关技术问题</h3><h3 id="Settings-settings的相关操作">Settings.settings的相关操作</h3><h3 id="UpdateSize函数的有关技术问题">UpdateSize函数的有关技术问题</h3><p><em>//last update：2015/11/28/01:36</em></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -743,81 +971,122 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/21/再见 OI！/" itemprop="url">
-                再见 OI！
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-21T14:47:42+08:00" content="2015-11-21">
-            2015-11-21
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/11/21/再见 OI！/" itemprop="url">
+                  再见 OI！
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-11-21T14:47:42+08:00" content="2015-11-21">
+              2015-11-21
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/11/21/再见 OI！/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/21/再见 OI！/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            赛后两天洛谷的民间数据出来了，貌似只有290？（100+100+0+60+10+20）。Day1T3 hash表没初始化，全炸了？Day2T1 写堆貌似贪心是错的？Day2T2 DP不会打又炸了？Day2T3 不会傻逼枚举然后贪心贪错了，直接20分搞到滚粗？290分在FJ能搞到省二左右（也是踩线），ZJ目测就直接出局了。
-这两天过得真的很难受，各种想法都在脑子里浮现：辛辛苦苦努力了一年然后省三滚粗
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/21/再见 OI！/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/11/21/再见 OI！/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/21/再见 OI！/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <h2 id="赛后两天">赛后两天</h2><p>洛谷的民间数据出来了，貌似只有290？（100+100+0+60+10+20）。Day1T3 hash表没初始化，全炸了？Day2T1 写堆貌似贪心是错的？Day2T2 DP不会打又炸了？Day2T3 不会傻逼枚举然后贪心贪错了，直接20分搞到滚粗？290分在FJ能搞到省二左右（也是踩线），ZJ目测就直接出局了。</p>
+<p>这两天过得真的很难受，各种想法都在脑子里浮现：辛辛苦苦努力了一年然后省三滚粗了？以后永远只能待在教室里敲不了代码了？自己想的拿个省一然后自招都是幻想？学校弱自己弱却无法改变？ 一切的一切都使我颓废不已，我是真的弱，真的水，真的粗心，明明好不容易有了一个机会，却白白浪费掉了，我要怎么向陈老师去交代，怎么向学长交代，怎么向自己交代？同时，文化课也让我变得十分迷茫，逃了这么多的课，漏了不知道多少东西，各种题目都不会，做出来是错的，已然感觉要双向滚粗了。我能明明白白感受到只有唯一一次机会却失去后而无法弥补的悲哀。我整天想着最后成绩出来了拿了个三=怎么见人，口口声声说着自己弱，经常都颓丧得趴在桌子上想着自己当时写题的时候怎么那么水，状态那么差，各种遗憾之类的。而事实上，这又能有什么用？准确来说，没有半点卵用都没有。去衢州这一次真的就是彻彻底底的失败，就是铩羽而归，而我又能改变得了什么？难不成我有办法去改源码，去改CCF的数据？<strong>既然已经失去了一次机会，那就更应该去珍惜去利用现在眼前的一切，而不该在未来的高考之后再去后悔此刻时光的弥足珍贵，去埋怨现在的自己没有好好努力，而是很傻逼的在后悔、在遗憾早已无法改变的东西。</strong>我也更能相信，将来的我也一定不会喜欢看到现在颓废的我的。</p>
+<p><strong>高考750分，把人生变成750岁；OI600分，让记忆只剩下1S，128MB</strong>我应该庆幸当时的自己没有错过OI这有趣的东西，能让自己在高中有过这样一段弥足珍贵的时光，更能接触到许许多多的算法，领略到与别人完全不同的东西，<strong>就算最终现实与梦想背道而驰，我也应该为自己有过这样的一段为梦想而执着过的经历而感到高兴</strong>。</p>
+<p>接着我就该退役了，想想自己当时在机房黑板上大大写着的”NOIP2015 RP++”的话还是感觉挺好笑的。也正像Day2的解压密码”2016Xia%MY@jian”虽然我不能坚持到2016夏天与你再见，但我仍会一直记得，<strong>我曾经也是个OIer，虽然未曾成功，虽然抱有遗憾，但我也确确实实是广大为自己梦想而执着的OIer中的那一个，并且会为在高中有过这样一段拼搏的时光而感到欣喜与骄傲！</strong></p>
+<p>最后，我要给马上回到文化课忙忙碌碌学习中的自己打气，这一段时光同样也是弥足珍贵的，just fighting！</p>
+<h2 id="赛后一星期">赛后一星期</h2><p>知道成绩了，没能像想象中那样翻盘，心里还是挺空落的。不止一次地觉得自己弱，自己水，特别是当每次做题被卡，或是看到别人获了什么奖，拿了什么牌时，心里就特别不是滋味。一项奋斗了这么长时间的东西，最终却没有得到自己想要的结果，败兴而归，是多么的遗憾啊。</p>
+<p><strong>“当时选择了这条路的我，就是奔着单纯的拿奖去的吗？”</strong>我也曾不止一次地这样问过自己，而事实上，我也找不出答案。仔细回顾这一年的时光，发现除了刚开始那段，一级最后比赛前目标清晰过外，其余的，大多是在浑浑噩噩，目标模糊中度过的。而现在的我，却更加感触不到未来，感触不到理想，甚至，开始变得麻木，变得适从。<strong>我讨厌这种失去方向失去理想，而只能每天在相同的循环中度过却无法改变的感觉！</strong>一个东西，当你曾经拥有并视之如命，而突然之间，突然得你都无法确切感知到，它便失去了踪影，任你怎么寻都无法寻到，或许，现在的我也正是这样一种感受。</p>
+<p>我的脑海中，能清晰地记得那个夜晚，一个人独自随坐在机房的讲台上，昏暗的灯光下，津津有味地看着NOI导刊中的线段树，感受着每一次思维的运转；我更加能记得，那些个无数的下午，晚上，我们6个人（gxy,yzy,zsh,ysy,wkw和我）在机房里，占据了前三排，听课，打题，或是不时地聊聊天，使冻结了的空气中，也有了一丝暖气。这一切的一切，便好似昨天刚刚发生过，而现在看来，真是恍如隔世。</p>
+<blockquote>
+<p><strong>“放慢所有 回忆里的感受 只怕听见 谁忽然泪流 那些曾经 不经事的哀愁  如今是最愉快的拥有”</strong></p>
+</blockquote>
+<p>（不知道是巧合还是啥，敲到这里的时候就刚刚听到这段歌词）。<strong>或许，回忆也不仅仅只能带给人伤痛，每一个无比清晰的片刻，每一个一起奋斗过的好友，以及那早已被敲得掉了字的键盘和满是污渍的鼠标，都让我真真实实地感受到时间的流逝，感受到灵感突来的欣喜，以及获得新知的激动。</strong>现在的我，也足以能够欣慰地回味这一年所经历的一切，并自豪地对别人说：“我用相同的时间，领略到了另一个世界！”这或许才是OI真正的魅力所在：看着每一次的提交由红色的Wrong Answer，变成绿色的Accept，由一百或是几十的分数，一步一步地爬升到300，以及那一次次走上讲台评测时，掩盖不住内心激动的沉着，这才是兴奋，才是喜悦，才是成长！</p>
+<p>遗憾的是，现在的我要向OI道别了，而我也无从知道下次相见会是何时，亦或是，后会无期。正如鲁迅先生所说（果真被语文老师说中了……），真的猛士，敢于直面惨淡的人生，敢于正视淋漓的鲜血。<strong>文化课固然是枯燥无味而又寥寥无期的，而正是这一天天未曾间断的求索，才给予了你终有一天的辉煌。造化是为庸人所设计的，而也只有庸人，才会被动地屈服，顺从于眼前的一切。每个人，都不想成为庸人，自然，我也不想。</strong></p>
+<p>新的一切都还在未来的路上等着你，而那一切，也只有顽强，勇毅而又不失聪慧的人才能得的到，So,just fighting!</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/005P1zB8gw1ey0i8dcjggj31kw0w0wor.jpg" alt="...."></p>
+<p><img src="http://ww4.sinaimg.cn/mw690/005P1zB8gw1ey0i9mdw8mj31g02kge81.jpg" alt="...."></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -837,80 +1106,106 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/06/写在NOIP2015复赛之前/" itemprop="url">
-                写在NOIP2015复赛之前
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-06T21:58:42+08:00" content="2015-11-06">
-            2015-11-06
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/11/06/写在NOIP2015复赛之前/" itemprop="url">
+                  写在NOIP2015复赛之前
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-11-06T21:58:42+08:00" content="2015-11-06">
+              2015-11-06
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/11/06/写在NOIP2015复赛之前/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/06/写在NOIP2015复赛之前/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            现在是2015年11月6日，再过一天就是2015年11月7日明天就是NOIP2015复赛day1的日子yzy加油 lzw加油 zbt加油 chp加油 lwq加油！YZOI加油！1for(rp=1;;rp+=INF);
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/11/06/写在NOIP2015复赛之前/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/06/写在NOIP2015复赛之前/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/06/写在NOIP2015复赛之前/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <h3 id="现在是2015年11月6日，再过一天就是2015年11月7日">现在是2015年11月6日，再过一天就是2015年11月7日</h3><h3 id="明天就是NOIP2015复赛day1的日子">明天就是NOIP2015复赛day1的日子</h3><h3 id="yzy加油_lzw加油_zbt加油_chp加油_lwq加油！">yzy加油 lzw加油 zbt加油 chp加油 lwq加油！</h3><h3 id="YZOI加油！">YZOI加油！</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(rp=<span class="number">1</span>;;rp+=INF);</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -930,80 +1225,107 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/02/杭二酱油记/" itemprop="url">
-                杭二酱油记
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-02T23:17:57+08:00" content="2015-11-02">
-            2015-11-02
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/感性/" itemprop="url" rel="index">
-                  <span itemprop="name">感性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/11/02/杭二酱油记/" itemprop="url">
+                  杭二酱油记
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-11-02T23:17:57+08:00" content="2015-11-02">
+              2015-11-02
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/11/02/杭二酱油记/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/02/杭二酱油记/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/感性/" itemprop="url" rel="index">
+                    <span itemprop="name">感性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            终于或许结束了，从一开始的学军到今天的杭二，或许我没有学到许多知识，但却有了常人不容易有的经历。坐在颠簸的火车上，回想着杭二的一切，虽然只有短短的连一天都谈不上，但这一天里我却也明白了许多。比起杭二来说，我们学校只不过是一个处于乡村欠发达地区的弱校罢了，我们没有强大的师资力量，我们没有好的生源，我们更没有足够好的气氛来带动自身的学习，在这样的一种现实下，我想作为一个弱校的蒟蒻，或许会由于各种原因被
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/02/杭二酱油记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/11/02/杭二酱油记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/02/杭二酱油记/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <p><img src="http://ww1.sinaimg.cn/mw690/005P1zB8gw1exn214wzkbj31kw16owv2.jpg" alt="...."><br>终于或许结束了，从一开始的学军到今天的杭二，或许我没有学到许多知识，但却有了常人不容易有的经历。坐在颠簸的火车上，回想着杭二的一切，虽然只有短短的连一天都谈不上，但这一天里我却也明白了许多。比起杭二来说，我们学校只不过是一个处于乡村欠发达地区的弱校罢了，我们没有强大的师资力量，我们没有好的生源，我们更没有足够好的气氛来带动自身的学习，在这样的一种现实下，我想作为一个弱校的蒟蒻，或许会由于各种原因被虐，被D，被瞧不起，但是，既然我们出来了，就不能让别人由于瞧不起我们而瞧不起我们义中。我们是水平低，是弱，但这并不能表明我们会因此而不想上进，会因此而颓废，就像zbt说的那样，既然知道自己是弱，那就不能让自己一直这么弱下去。而我知道，现在离复赛的时间也不多了，因此，我需要做的只是珍惜这最后的来之不易的机会，在自己的OI生涯画上句号之前，好好珍惜在机房最后的时间，认真做好最后的每一道题，不要给退役后的自己留下任何遗憾。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1023,82 +1345,109 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
     
       
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/02/vijos1285佳佳的魔法药水/" itemprop="url">
-                vijos1285 佳佳的魔法药水
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-02T17:45:49+08:00" content="2015-11-02">
-            2015-11-02
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/理性/" itemprop="url" rel="index">
-                  <span itemprop="name">理性</span>
+            
+              
+                
+                <a class="post-title-link" href="/2015/11/02/vijos1285佳佳的魔法药水/" itemprop="url">
+                  vijos1285 佳佳的魔法药水
                 </a>
-              </span>
-
               
-              
-
             
-          </span>
+          </h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-11-02T17:45:49+08:00" content="2015-11-02">
+              2015-11-02
+            </time>
+          </span>
+
           
-            <span class="post-comments-count">
+            <span class="post-category" >
               &nbsp; | &nbsp;
-              <a href="/2015/11/02/vijos1285佳佳的魔法药水/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/02/vijos1285佳佳的魔法药水/" itemprop="commentsCount"></span>
-              </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/理性/" itemprop="url" rel="index">
+                    <span itemprop="name">理性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
             </span>
           
-        
-        
-      </div>
-    </header>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
+          
             
-            题目大意给出n中个药水的价格，其中只有可能A+B合成C，叫你求出合成0号药水的最少花费和方案数
-解题过程考虑图论模型，即如果A和B能转化成C，那么便在A.B和C中连一条边，然后就直接跑dijkstra，每次取出最小的花费val[i]去更新其他药水的花费，当然这里的其他药水必须是已经更新过了的，至于方案数的话乘法原理一用就跑出来了.
-总结所谓的最短路，并不一定只有在有实际的“路”的题目中才用得到，关
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/02/vijos1285佳佳的魔法药水/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/11/02/vijos1285佳佳的魔法药水/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/02/vijos1285佳佳的魔法药水/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <h2 id="题目大意">题目大意</h2><p>给出n中个药水的价格，其中只有可能A+B合成C，叫你求出合成0号药水的最少花费和方案数</p>
+<h2 id="解题过程">解题过程</h2><p>考虑图论模型，即如果A和B能转化成C，那么便在A.B和C中连一条边，然后就直接跑dijkstra，每次取出最小的花费val[i]去更新其他药水的花费，当然这里的其他药水必须是已经更新过了的，至于方案数的话乘法原理一用就跑出来了.</p>
+<h2 id="总结">总结</h2><p>所谓的最短路，并不一定只有在有实际的“路”的题目中才用得到，关键是把题目转化为图论模型，把更新条件转化为”路“。此题没有对dijkstra算法贪心的精髓理解深刻是难以转化为图论模型的。</p>
+<h2 id="代码">代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">1000</span>+<span class="number">10</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF=<span class="number">0x7f7f7f</span>;</span><br><span class="line"><span class="keyword">int</span> n,tot[maxn],val[maxn],a[maxn][maxn];</span><br><span class="line"><span class="keyword">int</span> x,y,z;</span><br><span class="line"><span class="keyword">bool</span> v[maxn];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line"><span class="comment">//	freopen("1.sb","r",stdin);</span></span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;val[i]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">			a[i][j]=n+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">		tot[i]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;x&gt;&gt;y&gt;&gt;z)</span><br><span class="line">		a[x][y]=a[y][x]=z;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> minn=INF,k=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">			<span class="keyword">if</span>(!v[j]&amp;&amp;val[j]&lt;minn)</span><br><span class="line">			&#123;</span><br><span class="line">				minn=val[j];</span><br><span class="line">				k=j;</span><br><span class="line">			&#125;</span><br><span class="line">		<span class="keyword">if</span>(minn==INF)</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		v[k]=<span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">			<span class="keyword">if</span>(v[j]&amp;&amp;a[k][j]&lt;n+<span class="number">1</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>(val[a[k][j]]&gt;val[k]+val[j])</span><br><span class="line">				&#123;</span><br><span class="line">					val[a[k][j]]=val[k]+val[j];</span><br><span class="line">					tot[a[k][j]]=tot[k]*tot[j];</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span>(val[a[k][j]]==val[k]+val[j])</span><br><span class="line">					tot[a[k][j]]+=tot[k]*tot[j];		</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d %d"</span>,val[<span class="number">0</span>],tot[<span class="number">0</span>]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1120,17 +1469,20 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">&raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
- </div>
 
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-
-        
-      </div>
-
-      
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -1145,12 +1497,16 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
 
       
 
-      <section class="site-overview">
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://ww2.sinaimg.cn/small/005P1zB8gw1ex43mq0tx6j30bh0bijri.jpg" alt="laphets" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://ww2.sinaimg.cn/small/005P1zB8gw1ex43mq0tx6j30bh0bijri.jpg"
+               alt="laphets" />
           <p class="site-author-name" itemprop="name">laphets</p>
+          <p class="site-description motion-element" itemprop="description"></p>
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -1159,26 +1515,30 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">分类</span>
-              </a>
-          </div>
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">11</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
           <div class="feed-link motion-element">
             <a href="/atom.xml" rel="alternate">
-              <i class="menu-item-icon icon-next-feed"></i>
+              <i class="fa fa-rss"></i>
               RSS
             </a>
           </div>
@@ -1188,15 +1548,30 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/laphets" target="_blank">GitHub</a>
+                <a href="https://github.com/laphets" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/luo-wen-qing-3-9" target="_blank">知乎</a>
+                <a href="http://www.zhihu.com/people/luo-wen-qing-3-9" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://wpa.qq.com/msgrd?v=3&uin=451295859&site=qq&menu=yes" target="_blank">QQ</a>
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=451295859&site=qq&menu=yes" target="_blank" title="QQ">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  QQ
+                </a>
               </span>
             
           
@@ -1205,32 +1580,38 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
         
         
 
-        <div class="links-of-author motion-element">
-          
-            <p class="site-author-name">Links</p>
-            
-              <span class="links-of-author-item">
-              <a href="http://leafpigbirds.win" target="_blank">leafpigbirds</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://www.cnblogs.com/vb4896" target="_blank">lzw</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://www.cnblogs.com/lsdsjy" target="_blank">lsdsjy</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://medalplus.com" target="_blank">medalplus</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://orzer.me" target="_blank">Algorithm Works</a>
-              </span>
-            
-          
-        </div>
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://leafpigbirds.win" title="leafpigbirds" target="_blank">leafpigbirds</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.cnblogs.com/vb4896" title="lzw" target="_blank">lzw</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.cnblogs.com/lsdsjy" title="lsdsjy" target="_blank">lsdsjy</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://medalplus.com" title="medalplus" target="_blank">medalplus</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://orzer.me" title="Algorithm Works" target="_blank">Algorithm Works</a>
+                </li>
+              
+            </ul>
+          </div>
+        
 
       </section>
 
@@ -1240,23 +1621,22 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
   </aside>
 
 
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <!--
-<div class="copyright" >
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  &copy; &nbsp; 
-  <span itemprop="copyrightYear">2015</span>
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
-  -->
-  <section class="poweredby">Build by laphets  -  Just A OIer  
-  <section class="poweredby">Copyright © 2015 <a target="_blank" href="http://laphets.com/">laphets</a> . All Rights Reserved.
- <!-- <span class="author" itemprop="copyrightHolder">laphets</span> -->
-<!--  
+  <span class="author" itemprop="copyrightHolder">laphets</span>
 </div>
+
 <div class="powered-by">
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
@@ -1264,23 +1644,89 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
--->
 
- </div>
+        
+
+        
+      </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
   
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
   
   
-    
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
 
   
     
@@ -1291,114 +1737,30 @@ NOIP2015过去4天，也正是我回到文化课的第4天。这4天，每天都
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
       ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
       ds.charset = 'UTF-8';
       (document.getElementsByTagName('head')[0]
       || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
   </script>
+
+  
     
-     
-
-    
-  
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
   
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
 
 
 
-
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
-
-  
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for (i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
   
   
+  
 
   
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
-<!-- mathjax config similar to math.stackexchange -->
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
+  
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 </body>
 </html>
