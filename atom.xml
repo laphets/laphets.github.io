@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://laphets.com/"/>
-  <updated>2015-12-20T04:54:20.878Z</updated>
+  <updated>2016-06-17T17:58:09.336Z</updated>
   <id>http://laphets.com/</id>
   
   <author>
@@ -13,6 +13,19 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[123]]></title>
+    <link href="http://laphets.com/2016/06/18/123/"/>
+    <id>http://laphets.com/2016/06/18/123/</id>
+    <published>2016-06-17T17:58:09.000Z</published>
+    <updated>2016-06-17T17:58:09.336Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[《星空日记》 - 再见现实，你好星空！]]></title>
@@ -471,31 +484,6 @@ NOIP2015过去<span class="number">4]]>
     </summary>
     
       <category term="思索" scheme="http://laphets.com/tags/%E6%80%9D%E7%B4%A2/"/>
-    
-      <category term="感性" scheme="http://laphets.com/categories/%E6%84%9F%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[为什么把时间当做朋友]]></title>
-    <link href="http://laphets.com/2015/09/12/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8A%8A%E6%97%B6%E9%97%B4%E5%BD%93%E5%81%9A%E6%9C%8B%E5%8F%8B/"/>
-    <id>http://laphets.com/2015/09/12/为什么把时间当做朋友/</id>
-    <published>2015-09-12T03:12:01.000Z</published>
-    <updated>2015-10-10T13:06:37.000Z</updated>
-    <content type="html"><![CDATA[<ol>
-<li>焦虑是导致时间浪费、效率低下的根源之一。当人处于焦虑状态的时候，甚至可能出现一切理智都被清空的情况。</li>
-<li>一个相对有效的策略：当有问题解决不了时，可以先把它记下来，然后继续前行。原因是你一直在前行，一直在积累，一直在成长。所以，到有了答案的那一刻，你不在是当初无能为力的你，你已经重生。</li>
-</ol>
-]]></content>
-    <summary type="html">
-    <![CDATA[<ol>
-<li>焦虑是导致时间浪费、效率低下的根源之一。当人处于焦虑状态的时候，甚至可能出现一切理智都被清空的情况。</li>
-<li>一个相对有效的策略：当有问题解决不了时，可以先把它记下来，然后继续前行。原因是你一直在前行，一直在积累，一直在成长。所以，到有了答案的那一刻，]]>
-    </summary>
-    
-      <category term="思索" scheme="http://laphets.com/tags/%E6%80%9D%E7%B4%A2/"/>
-    
-      <category term="阅读" scheme="http://laphets.com/tags/%E9%98%85%E8%AF%BB/"/>
     
       <category term="感性" scheme="http://laphets.com/categories/%E6%84%9F%E6%80%A7/"/>
     
