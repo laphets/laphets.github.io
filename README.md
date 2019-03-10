@@ -1,5 +1,4 @@
 # Source Code of Laphets's Blog
-<img src="https://travis-ci.com/laphets/Blog.svg?token=VCzZwmz6akGJJz6ddrNF&branch=master">
-
+[![Build Status](https://travis-ci.com/laphets/laphets.github.io.svg?branch=master)](https://travis-ci.com/laphets/laphets.github.io)
 
 Based on *VuePress*
