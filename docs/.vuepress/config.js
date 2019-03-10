@@ -13,7 +13,7 @@ module.exports = {
         },
         {
             text: 'Resume',
-            link: '/resume/'
+            link: '/resume.pdf'
         }
         ],
     },
