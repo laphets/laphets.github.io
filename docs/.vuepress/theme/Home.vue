@@ -8,8 +8,8 @@
                     </div >
                     <div class="right">
                         <div v-for="(item, index) in $site.themeConfig.nav" :key="index">
-                            <router-link class="non-link" :to="item.link">{{item.text}}</router-link>
-                            
+                            <router-link v-if="!item.nonroute" class="non-link" :to="item.link">{{item.text}}</router-link>
+                            <a class="non-link" target="_blank" :href="item.link" v-else>{{item.text}}</a>
                         </div>
                     </div>
                 </div>

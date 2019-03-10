@@ -13,7 +13,8 @@ module.exports = {
         },
         {
             text: 'Resume',
-            link: '/resume.pdf'
+            link: '/resume.pdf',
+            nonroute: true
         },
         {
             text: 'About',
