@@ -11,5 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.0.0-alpha.43"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.10"
   }
 }

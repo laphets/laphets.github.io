@@ -17,7 +17,7 @@
 
             <main>
                 <div class="welcome">
-                    404 FOUND EVERYTHING
+                    <!-- 404 FOUND EVERYTHING -->
                 </div>
                 <div class="sub">
                     Pick up what is missed. Treasure what should be treasured!
@@ -47,11 +47,19 @@
 </template>
 
 <script>
+import Typed from 'typed.js';
 export default {
     created() {
-        console.log(this)
+        // console.log(this)
         // console.log(this.$site)
         // console.log(this.$page)
+    },
+    mounted() {
+        const typed = new Typed('.welcome', {
+            strings: ["404 FOUND NOTHING", "404 FOUND EVERYTHING"],
+            typeSpeed: 60,
+            showCursor: false,
+        });
     }
 }
 </script>
@@ -119,6 +127,7 @@ export default {
             margin-block-end: 0.27em;
             margin-inline-start: 0px;
             margin-inline-end: 0px;
+            min-height: 77px;
         }
         .sub {
             margin: 0;
