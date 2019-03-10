@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>线段树例题选讲 | Laphets&#39;s Blog</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.47209b56.css" as="style"><link rel="preload" href="/assets/js/app.053edf5b.js" as="script"><link rel="preload" href="/assets/js/3.9a584920.js" as="script"><link rel="preload" href="/assets/js/104.9f09a556.js" as="script"><link rel="prefetch" href="/assets/js/10.fd51a2da.js"><link rel="prefetch" href="/assets/js/100.bbef3192.js"><link rel="prefetch" href="/assets/js/101.9f799419.js"><link rel="prefetch" href="/assets/js/102.44afeb70.js"><link rel="prefetch" href="/assets/js/103.c3f233ab.js"><link rel="prefetch" href="/assets/js/105.17e5ed09.js"><link rel="prefetch" href="/assets/js/106.d46da700.js"><link rel="prefetch" href="/assets/js/107.8fe6a0a4.js"><link rel="prefetch" href="/assets/js/108.05f4beba.js"><link rel="prefetch" href="/assets/js/109.70bf0771.js"><link rel="prefetch" href="/assets/js/11.6d2ef98a.js"><link rel="prefetch" href="/assets/js/110.cbbc8ad0.js"><link rel="prefetch" href="/assets/js/111.53eef801.js"><link rel="prefetch" href="/assets/js/112.33ce2027.js"><link rel="prefetch" href="/assets/js/113.5be11689.js"><link rel="prefetch" href="/assets/js/114.c594eb80.js"><link rel="prefetch" href="/assets/js/115.94f4d181.js"><link rel="prefetch" href="/assets/js/116.6077a024.js"><link rel="prefetch" href="/assets/js/117.adb550af.js"><link rel="prefetch" href="/assets/js/12.a546ae5c.js"><link rel="prefetch" href="/assets/js/13.25bca9e1.js"><link rel="prefetch" href="/assets/js/14.35d2abd4.js"><link rel="prefetch" href="/assets/js/15.b471ba4c.js"><link rel="prefetch" href="/assets/js/16.122cbbb0.js"><link rel="prefetch" href="/assets/js/17.eb1134dc.js"><link rel="prefetch" href="/assets/js/18.c1438f75.js"><link rel="prefetch" href="/assets/js/19.b4c187f3.js"><link rel="prefetch" href="/assets/js/2.b7f47ccc.js"><link rel="prefetch" href="/assets/js/20.bb3f3967.js"><link rel="prefetch" href="/assets/js/21.b04640a5.js"><link rel="prefetch" href="/assets/js/22.98384258.js"><link rel="prefetch" href="/assets/js/23.51a42e8f.js"><link rel="prefetch" href="/assets/js/24.df2894f1.js"><link rel="prefetch" href="/assets/js/25.56b74e59.js"><link rel="prefetch" href="/assets/js/26.2be5d15d.js"><link rel="prefetch" href="/assets/js/27.fded9f91.js"><link rel="prefetch" href="/assets/js/28.56795dd8.js"><link rel="prefetch" href="/assets/js/29.87377330.js"><link rel="prefetch" href="/assets/js/30.48e3318a.js"><link rel="prefetch" href="/assets/js/31.e84a241b.js"><link rel="prefetch" href="/assets/js/32.fd2f0f61.js"><link rel="prefetch" href="/assets/js/33.4dbb26a9.js"><link rel="prefetch" href="/assets/js/34.df75d147.js"><link rel="prefetch" href="/assets/js/35.2b387044.js"><link rel="prefetch" href="/assets/js/36.05c92233.js"><link rel="prefetch" href="/assets/js/37.c7c98d77.js"><link rel="prefetch" href="/assets/js/38.556079ab.js"><link rel="prefetch" href="/assets/js/39.8150ae31.js"><link rel="prefetch" href="/assets/js/4.9bd36cfe.js"><link rel="prefetch" href="/assets/js/40.812524c3.js"><link rel="prefetch" href="/assets/js/41.c4c6ed84.js"><link rel="prefetch" href="/assets/js/42.ee21f112.js"><link rel="prefetch" href="/assets/js/43.07c5d66b.js"><link rel="prefetch" href="/assets/js/44.b4275d5c.js"><link rel="prefetch" href="/assets/js/45.c62cc787.js"><link rel="prefetch" href="/assets/js/46.53b59287.js"><link rel="prefetch" href="/assets/js/47.6c40f0f0.js"><link rel="prefetch" href="/assets/js/48.fae01851.js"><link rel="prefetch" href="/assets/js/49.8ef2d010.js"><link rel="prefetch" href="/assets/js/5.776d9e7b.js"><link rel="prefetch" href="/assets/js/50.3607d84c.js"><link rel="prefetch" href="/assets/js/51.18e997c9.js"><link rel="prefetch" href="/assets/js/52.b4f197fb.js"><link rel="prefetch" href="/assets/js/53.d1a1d7b3.js"><link rel="prefetch" href="/assets/js/54.bc3ab9fb.js"><link rel="prefetch" href="/assets/js/55.4bbaa070.js"><link rel="prefetch" href="/assets/js/56.e9cf89b4.js"><link rel="prefetch" href="/assets/js/57.303929fb.js"><link rel="prefetch" href="/assets/js/58.057209bb.js"><link rel="prefetch" href="/assets/js/59.ee0a2a88.js"><link rel="prefetch" href="/assets/js/6.fe31bafa.js"><link rel="prefetch" href="/assets/js/60.b3e83873.js"><link rel="prefetch" href="/assets/js/61.00370bae.js"><link rel="prefetch" href="/assets/js/62.423aee97.js"><link rel="prefetch" href="/assets/js/63.a976ff75.js"><link rel="prefetch" href="/assets/js/64.b6538cf1.js"><link rel="prefetch" href="/assets/js/65.87fc4add.js"><link rel="prefetch" href="/assets/js/66.b8f91a9d.js"><link rel="prefetch" href="/assets/js/67.a5a81b1d.js"><link rel="prefetch" href="/assets/js/68.92f414f7.js"><link rel="prefetch" href="/assets/js/69.7737e3fe.js"><link rel="prefetch" href="/assets/js/7.c8965330.js"><link rel="prefetch" href="/assets/js/70.047f5c51.js"><link rel="prefetch" href="/assets/js/71.9b912f5f.js"><link rel="prefetch" href="/assets/js/72.4650541a.js"><link rel="prefetch" href="/assets/js/73.4919365a.js"><link rel="prefetch" href="/assets/js/74.0ed6ca68.js"><link rel="prefetch" href="/assets/js/75.877208e3.js"><link rel="prefetch" href="/assets/js/76.c11101e9.js"><link rel="prefetch" href="/assets/js/77.82dd4572.js"><link rel="prefetch" href="/assets/js/78.4386b43c.js"><link rel="prefetch" href="/assets/js/79.80a9a131.js"><link rel="prefetch" href="/assets/js/8.b625c8ef.js"><link rel="prefetch" href="/assets/js/80.3703d7da.js"><link rel="prefetch" href="/assets/js/81.ff2a57fe.js"><link rel="prefetch" href="/assets/js/82.bca740e3.js"><link rel="prefetch" href="/assets/js/83.3b148083.js"><link rel="prefetch" href="/assets/js/84.05411864.js"><link rel="prefetch" href="/assets/js/85.0dcf4c75.js"><link rel="prefetch" href="/assets/js/86.5fe36bf7.js"><link rel="prefetch" href="/assets/js/87.af3f292d.js"><link rel="prefetch" href="/assets/js/88.65b1b0b9.js"><link rel="prefetch" href="/assets/js/89.c20a5522.js"><link rel="prefetch" href="/assets/js/9.4804708b.js"><link rel="prefetch" href="/assets/js/90.14451cd6.js"><link rel="prefetch" href="/assets/js/91.934368e5.js"><link rel="prefetch" href="/assets/js/92.b4e07d02.js"><link rel="prefetch" href="/assets/js/93.20b8dd18.js"><link rel="prefetch" href="/assets/js/94.0b984977.js"><link rel="prefetch" href="/assets/js/95.0c620d5f.js"><link rel="prefetch" href="/assets/js/96.54fd16d3.js"><link rel="prefetch" href="/assets/js/97.ec375e55.js"><link rel="prefetch" href="/assets/js/98.f6d71bbf.js"><link rel="prefetch" href="/assets/js/99.10c605a7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.47209b56.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><div class="page-title"><a href="/" class="non-link router-link-active">线段树例题选讲</a></div> <div class="body-container"><div class="side-bar"><div class="side-title">
+                  Related Topics
+              </div> <div><div><a href="#引子">
+                          引子
+                      </a></div><div><a href="#hdu-1166-敌兵布阵">
+                          HDU 1166 敌兵布阵
+                      </a></div><div><a href="#题目大意">
+                          题目大意
+                      </a></div><div><a href="#代码">
+                          代码
+                      </a></div><div><a href="#hdu-1757-i-hate-it">
+                          HDU 1757 I Hate It
+                      </a></div><div><a href="#题目大意-2">
+                          题目大意
+                      </a></div><div><a href="#代码-2">
+                          代码
+                      </a></div><div><a href="#hdu-1698-just-a-hook">
+                          HDU 1698 Just a Hook
+                      </a></div><div><a href="#题目大意-3">
+                          题目大意
+                      </a></div><div><a href="#代码-3">
+                          代码
+                      </a></div><div><a href="#poj-3468-a-simple-problem-with-integers">
+                          POJ 3468 A Simple Problem with Integers
+                      </a></div><div><a href="#题目大意-4">
+                          题目大意
+                      </a></div><div><a href="#代码-4">
+                          代码
+                      </a></div><div><a href="#poi-2001-railways">
+                          POI 2001 Railways
+                      </a></div><div><a href="#题目大意-5">
+                          题目大意
+                      </a></div><div><a href="#代码-5">
+                          代码
+                      </a></div><div><a href="#poj-2777-count-color">
+                          POJ 2777 Count Color
+                      </a></div><div><a href="#题目大意-6">
+                          题目大意
+                      </a></div><div><a href="#代码-6">
+                          代码
+                      </a></div><div><a href="#结语">
+                          结语
+                      </a></div></div></div> <div class="content"><div class="content default"><p>貌似很久没有更新blog了？这次对上个学期敲的线段树题目汇个总。
+其中关于线段树的内容请移步这篇文章</p> <h2 id="引子"><a href="#引子" aria-hidden="true" class="header-anchor">#</a> 引子</h2> <p>这些题都是我在上个学期OI“退役”以后在机房苦逼敲的，一直想写个题解总结下啥的但苦于没有时间，现在正好趁着寒假完成这个任务…
+在这套题解里包含着HDU,POJ,POI等的各种线段树基本题，实现全部采用链表，欢迎来看。</p> <h2 id="hdu-1166-敌兵布阵"><a href="#hdu-1166-敌兵布阵" aria-hidden="true" class="header-anchor">#</a> HDU 1166 敌兵布阵</h2> <h3 id="题目大意"><a href="#题目大意" aria-hidden="true" class="header-anchor">#</a> 题目大意</h3> <p>简单的单个节点操作，查询区间和，线段树一敲很容易实现。</p> <h3 id="代码"><a href="#代码" aria-hidden="true" class="header-anchor">#</a> 代码</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+using namespace std;
+const int maxn=200000+10;
+struct Node
+{
+    int left,right;
+    int sum;
+}tree[maxn*10];
+int T,n,m,a,b,num[maxn];
+char s[10];
+int build(int root,int left,int right)
+{
+    tree[root].left=left;
+    tree[root].right=right;
+    if(left==right)
+        return tree[root].sum=num[left];
+    int mid=(left+right)&gt;&gt;1;
+    int x=build(root*2,left,mid);
+    int y=build(root*2+1,mid+1,right);
+    return tree[root].sum=x+y;
+}
+int query(int root,int left,int right)
+{
+    if(tree[root].right&lt;left||tree[root].left&gt;right)
+        return 0;
+    if(left&lt;=tree[root].left&amp;&amp;tree[root].right&lt;=right)
+        return tree[root].sum;
+    int x=query(root*2,left,right);
+    int y=query(root*2+1,left,right);
+    return x+y;
+}
+int update(int root,int pos,int val)
+{
+    if(pos&lt;tree[root].left||pos&gt;tree[root].right)
+        return tree[root].sum;
+    if(tree[root].left==tree[root].right&amp;&amp;tree[root].left==pos)
+        return tree[root].sum=val;
+    int x=update(root*2,pos,val);
+    int y=update(root*2+1,pos,val);
+    return tree[root].sum=x+y;
+}
+int main()
+{
+//  freopen(&quot;1.sb&quot;,&quot;r&quot;,stdin);
+    scanf(&quot;%d&quot;,&amp;T);
+    for(int cnt=1;cnt&lt;=T;cnt++)
+    {
+        scanf(&quot;%d&quot;,&amp;n);
+        for(int i=1;i&lt;=n;i++)
+            scanf(&quot;%d&quot;,&amp;num[i]);
+        build(1,1,n);
+        printf(&quot;Case %d:\n&quot;,cnt);
+        while(1)
+        {
+            scanf(&quot;%s&quot;,&amp;s);
+            if(s[0]=='E')
+                break;
+            int x,y;
+            if(s[0]=='A')   //Add
+            {
+                scanf(&quot;%d%d&quot;,&amp;x,&amp;y);
+                num[x]+=y;
+                update(1,x,num[x]);
+            }
+            if(s[0]=='S')   //Sub
+            {
+                scanf(&quot;%d%d&quot;,&amp;x,&amp;y);
+                num[x]-=y;
+                update(1,x,num[x]);
+            }
+            if(s[0]=='Q')
+            {
+                scanf(&quot;%d%d&quot;,&amp;x,&amp;y);
+                printf(&quot;%d\n&quot;,query(1,x,y));
+            }
+        }
+    }
+    return 0;
+}
+</code></pre></div><h2 id="hdu-1757-i-hate-it"><a href="#hdu-1757-i-hate-it" aria-hidden="true" class="header-anchor">#</a> HDU 1757 I Hate It</h2> <h3 id="题目大意-2"><a href="#题目大意-2" aria-hidden="true" class="header-anchor">#</a> 题目大意</h3> <p>单个节点的操作外加查询区间最值，同样容易实现。</p> <h3 id="代码-2"><a href="#代码-2" aria-hidden="true" class="header-anchor">#</a> 代码</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+using namespace std;
+const int maxn=200000+10;
+struct Node
+{
+    int left,right;
+    int max;
+}tree[maxn*10];
+int n,m,a,b,num[maxn];
+char s;
+inline int max1(int a,int b)
+{
+    if(a&lt;b)
+        return b;
+    return a;
+}
+int bulid(int root,int left,int right)
+{
+    tree[root].left=left;
+    tree[root].right=right;
+    if(left==right)
+        return tree[root].max=num[left];
+    int mid=(left+right)&gt;&gt;1;
+    int x=bulid(root*2,left,mid);
+    int y=bulid(root*2+1,mid+1,right);
+    return tree[root].max=max1(x,y);
+}
+int query(int root,int left,int right)
+{
+    if(tree[root].right&lt;left||tree[root].left&gt;right)
+        return 0;
+    if(left&lt;=tree[root].left&amp;&amp;tree[root].right&lt;=right)
+        return tree[root].max;
+    int x=query(root*2,left,right);
+    int y=query(root*2+1,left,right);
+    return max1(x,y);
+}
+int update(int root,int pos,int val)
+{
+    if(pos&lt;tree[root].left||pos&gt;tree[root].right)
+        return tree[root].max;
+    if(tree[root].left==tree[root].right&amp;&amp;tree[root].left==pos)
+        return tree[root].max=val;
+    int x=update(root*2,pos,val);
+    int y=update(root*2+1,pos,val);
+    return tree[root].max=max1(x,y);
+}
+int main()
+{
+//  freopen(&quot;1.sb&quot;,&quot;r&quot;,stdin);
+    while(cin&gt;&gt;n&gt;&gt;m)
+    {
+        for(int i=1;i&lt;=n;i++)
+            scanf(&quot;%d&quot;,&amp;num[i]);
+        bulid(1,1,n);
+        while(m--)
+        {
+            cin&gt;&gt;s;
+              
+            scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+            if(s=='Q')
+            {
+                printf(&quot;%d\n&quot;,query(1,a,b));
+            }
+            else
+            {
+                num[a]=b;
+                update(1,a,b);
+            }
+        }
+    }
+    return 0;
+}
+</code></pre></div><h2 id="hdu-1698-just-a-hook"><a href="#hdu-1698-just-a-hook" aria-hidden="true" class="header-anchor">#</a> HDU 1698 Just a Hook</h2> <h3 id="题目大意-3"><a href="#题目大意-3" aria-hidden="true" class="header-anchor">#</a> 题目大意</h3> <p>他怎么知道我打dota（逃…）。 将整个区间赋值为同一个数，这里需要用到lazy-tag。额外维护两个域en来表示一个区间是否为统一的数，若en有效，则data表示区间统一的值。</p> <h3 id="代码-3"><a href="#代码-3" aria-hidden="true" class="header-anchor">#</a> 代码</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstdlib&gt;
+using namespace std;
+const int maxn=1000+10;
+struct Node
+{
+    int left,right;
+    int delta,data,sum;
+    bool en;
+    Node *leftchild,*rightchild;
+};
+int T,n,q,x,y,z;
+void build(Node *cur,int l,int r)
+{
+    cur-&gt;left=l;
+    cur-&gt;right=r;
+    if(l!=r)
+    {
+        cur-&gt;leftchild=new Node;
+        cur-&gt;rightchild=new Node;
+        build(cur-&gt;leftchild,l,(l+r)/2);
+        build(cur-&gt;rightchild,(l+r)/2+1,r);
+    }
+    else
+        cur-&gt;leftchild=cur-&gt;rightchild=NULL;
+}
+void clear(Node *cur)
+{
+    if(cur-&gt;left!=cur-&gt;right)
+    {
+        clear(cur-&gt;leftchild);
+        clear(cur-&gt;rightchild);
+    }
+    free(cur);
+}
+int calcsum(Node *cur)
+{
+    if(cur-&gt;en)
+        return (cur-&gt;right-cur-&gt;left+1)*cur-&gt;data;
+    else
+        return cur-&gt;sum;
+}
+void update(Node *cur,int l,int r,int num)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    if(cur-&gt;en)
+    {
+        if(lc!=NULL)
+        {
+            lc-&gt;data=cur-&gt;data;
+            lc-&gt;en=true;
+        }
+        if(rc!=NULL)
+        {
+            rc-&gt;data=cur-&gt;data;
+            rc-&gt;en=true;
+        }
+        cur-&gt;en=false;
+    }
+    if((l&lt;=cur-&gt;left)&amp;&amp;(cur-&gt;right&lt;=r))
+    {
+        cur-&gt;en=true;
+        cur-&gt;data=num;
+    }
+    else
+    {
+        if(l&lt;=(cur-&gt;left+cur-&gt;right)/2)
+            update(lc,l,r,num);
+        if(r&gt;(cur-&gt;left+cur-&gt;right)/2)
+            update(rc,l,r,num);
+        cur-&gt;sum=calcsum(lc)+calcsum(rc);
+    }
+}
+int querysum(Node *cur,int l,int r)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    int ret=0;
+    if((l&lt;=cur-&gt;left)&amp;&amp;(cur-&gt;right&lt;=r))
+        ret+=calcsum(cur);
+    else
+    {
+        if(cur-&gt;en)
+        {
+            lc-&gt;data=cur-&gt;data;
+            lc-&gt;en=true;
+            rc-&gt;data=cur-&gt;data;
+            rc-&gt;en=true;
+            cur-&gt;en=false;
+        }
+        if(l&lt;=(cur-&gt;left+cur-&gt;right)/2)
+            ret+=querysum(lc,l,r);
+        if(r&gt;(cur-&gt;left+cur-&gt;right)/2)
+            ret+=querysum(rc,l,r);
+        cur-&gt;sum=lc-&gt;sum+rc-&gt;sum;
+    }
+    return ret;
+}
+int main()
+{
+//    freopen(&quot;1.sb&quot;,&quot;r&quot;,stdin);
+    scanf(&quot;%d&quot;,&amp;T);
+    for(int cnt=1;cnt&lt;=T;cnt++)
+    {
+        scanf(&quot;%d%d&quot;,&amp;n,&amp;q);
+//        root=NULL;
+        Node *root=new Node;
+        build(root,1,n);
+        update(root,1,n,1);
+        while(q--)
+        {
+            scanf(&quot;%d%d%d&quot;,&amp;x,&amp;y,&amp;z);
+            update(root,x,y,z);
+        }
+        printf(&quot;Case %d: The total value of the hook is %d.\n&quot;,cnt,querysum(root,1,n));
+        clear(root);
+    }
+    return 0;
+}
+</code></pre></div><h2 id="poj-3468-a-simple-problem-with-integers"><a href="#poj-3468-a-simple-problem-with-integers" aria-hidden="true" class="header-anchor">#</a> POJ 3468 A Simple Problem with Integers</h2> <h3 id="题目大意-4"><a href="#题目大意-4" aria-hidden="true" class="header-anchor">#</a> 题目大意</h3> <p>虽然题干是英文但应该也好懂，将区间整体加上一个数并且询问区间和，同样可以使用lazy-tag进行维护，但注意数据貌似会爆int？</p> <h3 id="代码-4"><a href="#代码-4" aria-hidden="true" class="header-anchor">#</a> 代码</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstdlib&gt;
+using namespace std;
+const int maxn=100000+10;
+typedef long long LL;
+struct Node
+{
+    int left,right;
+    LL delta,sum;
+    Node *leftchild,*rightchild;
+};
+int T,n,q,x,y,z,num[maxn];
+char s;
+void build(Node *cur,int l,int r)
+{
+    cur-&gt;left=l;
+    cur-&gt;right=r;
+    cur-&gt;delta=0;
+    if(l!=r)
+    {
+        cur-&gt;leftchild=new Node;
+        cur-&gt;rightchild=new Node;
+        build(cur-&gt;leftchild,l,(l+r)/2);
+        build(cur-&gt;rightchild,(l+r)/2+1,r);
+        cur-&gt;sum=cur-&gt;leftchild-&gt;sum+cur-&gt;rightchild-&gt;sum;
+        //cout&lt;&lt;cur-&gt;sum&lt;&lt;endl;
+    }
+    else
+    {
+        cur-&gt;sum=num[l];
+        //cout&lt;&lt;cur-&gt;sum&lt;&lt;endl;
+        cur-&gt;leftchild=cur-&gt;rightchild=NULL;
+    }
+         
+}
+void update(Node *cur,int l,int r,int delta)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    if((l&lt;=cur-&gt;left)&amp;&amp;(cur-&gt;right&lt;=r))
+        cur-&gt;delta+=delta;
+    else
+    {
+        if(l&lt;=(cur-&gt;left+cur-&gt;right)/2)
+            update(lc,l,r,delta);
+        if(r&gt;(cur-&gt;left+cur-&gt;right)/2)
+            update(rc,l,r,delta);
+        cur-&gt;sum=lc-&gt;sum+lc-&gt;delta*(lc-&gt;right-lc-&gt;left+1);
+        cur-&gt;sum+=rc-&gt;sum+rc-&gt;delta*(rc-&gt;right-rc-&gt;left+1);
+    }
+}
+LL query(Node *cur,int l,int r)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    LL ret=0;
+    if((l&lt;=cur-&gt;left)&amp;&amp;(cur-&gt;right&lt;=r))
+        ret+=cur-&gt;sum+cur-&gt;delta*(cur-&gt;right-cur-&gt;left+1);
+    else
+    {
+        lc-&gt;delta+=cur-&gt;delta;
+        rc-&gt;delta+=cur-&gt;delta;
+        cur-&gt;delta=0;
+        if(l&lt;=(cur-&gt;left+cur-&gt;right)/2)
+            ret+=query(lc,l,r);
+        if(r&gt;(cur-&gt;left+cur-&gt;right)/2)
+            ret+=query(rc,l,r);
+        cur-&gt;sum=lc-&gt;sum+lc-&gt;delta*(lc-&gt;right-lc-&gt;left+1);
+        cur-&gt;sum+=rc-&gt;sum+rc-&gt;delta*(rc-&gt;right-rc-&gt;left+1);
+    }
+    return ret;
+}
+int main()
+{
+//  freopen(&quot;1.sb&quot;,&quot;r&quot;,stdin);
+    scanf(&quot;%d%d&quot;,&amp;n,&amp;q);
+    Node *root=new Node;
+    for(int i=1;i&lt;=n;i++)
+        scanf(&quot;%d&quot;,&amp;num[i]);
+    build(root,1,n);
+    for(int i=1;i&lt;=q;i++)
+    {
+        cin&gt;&gt;s;
+        if(s=='Q')
+        {
+            scanf(&quot;%d%d&quot;,&amp;x,&amp;y);
+            printf(&quot;%lld\n&quot;,query(root,x,y));
+        }
+        else
+        {
+            scanf(&quot;%d%d%d&quot;,&amp;x,&amp;y,&amp;z);
+            update(root,x,y,z);
+        }
+    }
+     
+    return 0;
+}
+</code></pre></div><h2 id="poi-2001-railways"><a href="#poi-2001-railways" aria-hidden="true" class="header-anchor">#</a> POI 2001 Railways</h2> <h3 id="题目大意-5"><a href="#题目大意-5" aria-hidden="true" class="header-anchor">#</a> 题目大意</h3> <p>传说中的POI原题哦。同样的可以转化成区间整体加数并且询问区间和的问题。然而这个题目有点坑，一开始提交总是a不掉，最后去POI摸了数据手工对照才发现如果两个区间出现这种情况：[1,3],[3,6]，这样的话即使3这个节点超过了最大值，那么还是可行的。这里我用的处理方法是将区间的上介减1，然后再insert()的方法，具体看代码。</p> <h3 id="代码-5"><a href="#代码-5" aria-hidden="true" class="header-anchor">#</a> 代码</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstdlib&gt;
+using namespace std;
+struct Node
+{
+    int left,right;
+    int max,delta;
+    Node *leftchild,*rightchild;
+};
+int n,m,r,k1,k2,v;
+void build(Node *cur,int l,int r)
+{
+    cur-&gt;left=l,cur-&gt;right=r,cur-&gt;max=0,cur-&gt;delta=0;
+    if(l!=r)
+    {
+        cur-&gt;leftchild=new Node;
+        cur-&gt;rightchild=new Node;
+        build(cur-&gt;leftchild,l,(l+r)/2);
+        build(cur-&gt;rightchild,(l+r)/2+1,r);
+    }
+    else
+        cur-&gt;leftchild=cur-&gt;rightchild=NULL;
+}
+void update(Node *cur,int l,int r,int delta)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    if((l&lt;=cur-&gt;left)&amp;&amp;(cur-&gt;right&lt;=r))
+        cur-&gt;delta+=delta;
+    else
+    {
+        if(l&lt;=(cur-&gt;left+cur-&gt;right)/2)
+            update(lc,l,r,delta);
+        if(r&gt;(cur-&gt;left+cur-&gt;right)/2)
+            update(rc,l,r,delta);
+        //\cur-&gt;max+=cur-&gt;delta;
+        //cout&lt;&lt;cur-&gt;max&lt;&lt;endl;
+        cur-&gt;max=max(cur-&gt;max,lc-&gt;max+lc-&gt;delta);
+        cur-&gt;max=max(cur-&gt;max,rc-&gt;max+rc-&gt;delta);
+    }
+}
+int query(Node *cur,int l,int r)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    int ret=0;
+    if((l&lt;=cur-&gt;left)&amp;&amp;(cur-&gt;right&lt;=r))
+        ret=cur-&gt;max+cur-&gt;delta;
+    else
+    {
+        lc-&gt;delta+=cur-&gt;delta;
+        rc-&gt;delta+=cur-&gt;delta;
+        cur-&gt;max+=cur-&gt;delta;
+        cur-&gt;delta=0;
+        if(l&lt;=(cur-&gt;left+cur-&gt;right)/2)
+        {
+            int x=query(lc,l,r);
+            ret=max(ret,x);
+        }
+        if(r&gt;(cur-&gt;left+cur-&gt;right)/2)
+        {
+            int x=query(rc,l,r);
+            ret=max(ret,x);
+        }
+        cur-&gt;max=max(cur-&gt;max,lc-&gt;max+lc-&gt;delta);
+        cur-&gt;max=max(cur-&gt;max,rc-&gt;max+rc-&gt;delta);
+    }
+    return ret;
+}
+int main()
+{
+    //freopen(&quot;1.sb&quot;,&quot;r&quot;,stdin);
+    scanf(&quot;%d%d%d&quot;,&amp;n,&amp;m,&amp;r);
+    Node *root=new Node;
+    build(root,1,n-1);
+    while(r--)
+    {
+        scanf(&quot;%d%d%d&quot;,&amp;k1,&amp;k2,&amp;v);
+        //update(root,k1,k2,v);
+        //cout&lt;&lt;query(root,1,4)&lt;&lt;endl;
+        int maxx=query(root,k1,k2-1);
+        //cout&lt;&lt;maxx&lt;&lt;endl;
+        if(maxx+v&lt;=m)
+        {
+            printf(&quot;T\n&quot;);
+            update(root,k1,k2-1,v);
+        }
+        else
+            printf(&quot;F\n&quot;);
+    }
+    return 0;
+}
+</code></pre></div><h2 id="poj-2777-count-color"><a href="#poj-2777-count-color" aria-hidden="true" class="header-anchor">#</a> POJ 2777 Count Color</h2> <h3 id="题目大意-6"><a href="#题目大意-6" aria-hidden="true" class="header-anchor">#</a> 题目大意</h3> <p>英文题，但仍然很好懂。将区间整体赋值，并且查询区间中不同数的个数。这个题的技巧在于颜色总共只有30种，那么我们可以用位操作表示每一种颜色，父节点的颜色即为子节点的按位或(or)，最后1的个数即为不同颜色的个数。</p> <h3 id="代码-6"><a href="#代码-6" aria-hidden="true" class="header-anchor">#</a> 代码</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int maxn=1000+10;
+struct Node
+{
+    int left,right,data;
+    int color;
+    Node *leftchild,*rightchild;
+    bool cover;
+};
+int n,t,o,x,y,z,cnt;
+void build(Node *cur,int l,int r)
+{
+    cur-&gt;left=l;
+    cur-&gt;right=r;
+    cur-&gt;color=1;
+    cur-&gt;cover=false;
+    if(l!=r)
+    {
+        cur-&gt;leftchild=new Node;
+        cur-&gt;rightchild=new Node;
+        build(cur-&gt;leftchild,l,(l+r)/2);
+        build(cur-&gt;rightchild,(l+r)/2+1,r);
+    }
+    else
+        cur-&gt;leftchild=cur-&gt;rightchild=NULL;
+}
+void update(Node *cur,int l,int r,int value)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    if(cur-&gt;left==l&amp;&amp;cur-&gt;right==r)
+    {
+        cur-&gt;color=(1&lt;&lt;(value-1));
+        cur-&gt;cover=true;
+        return;
+    }
+    if(cur-&gt;cover)
+    {
+        cur-&gt;cover=false;
+        lc-&gt;cover=true;
+        rc-&gt;cover=true;
+        lc-&gt;color=cur-&gt;color;
+        rc-&gt;color=cur-&gt;color;
+    }
+    int mid=(cur-&gt;left+cur-&gt;right)/2;
+    if(r&lt;=mid)
+        update(lc,l,r,value);
+    else if(l&gt;mid)
+        update(rc,l,r,value);
+    else
+    {
+        update(lc,l,mid,value);
+        update(rc,mid+1,r,value);  
+    }
+    cur-&gt;color=lc-&gt;color|rc-&gt;color;
+}
+void query(Node *cur,int l,int r)
+{
+    Node *lc=cur-&gt;leftchild,*rc=cur-&gt;rightchild;
+    if(cur-&gt;cover||(cur-&gt;left==l&amp;&amp;cur-&gt;right==r))
+    {
+        cnt|=cur-&gt;color;
+        return;
+    }
+    int mid=(cur-&gt;left+cur-&gt;right)/2;
+    if(r&lt;=mid)
+        query(lc,l,r);
+    else if(l&gt;mid)
+        query(rc,l,r);
+    else
+    {
+        query(lc,l,mid);
+        query(rc,mid+1,r); 
+    }  
+}
+int main()
+{
+//  freopen(&quot;1.sb&quot;,&quot;r&quot;,stdin);
+    scanf(&quot;%d%d%d&quot;,&amp;n,&amp;t,&amp;o);
+    Node *root=new Node;
+    build(root,1,n);
+    while(o--)
+    {
+        char ch;
+        scanf(&quot; %c &quot;,&amp;ch);
+        //cout&lt;&lt;ch&lt;&lt;endl;
+        //cin&gt;&gt;ch;
+        if(ch=='C')
+        {
+            scanf(&quot;%d%d%d&quot;,&amp;x,&amp;y,&amp;z);
+            if(x&gt;y)
+                swap(x,y);
+            update(root,x,y,z);
+        }
+        else
+        {
+            scanf(&quot;%d%d&quot;,&amp;x,&amp;y);
+            if(x&gt;y)
+                swap(x,y);
+            cnt=0;
+            int ans=0;
+            query(root,x,y);
+            for(int i=0;i&lt;t;i++)
+                if(cnt&amp;(1&lt;&lt;i))
+                    ans++;
+            printf(&quot;%d\n&quot;,ans);
+        }
+    }
+    return 0;
+}
+</code></pre></div><h2 id="结语"><a href="#结语" aria-hidden="true" class="header-anchor">#</a> 结语</h2> <p>这些题主要都属于一些模板类的题，但其中也不乏技巧类的东西。而线段树的精髓也在于，当线段完全覆盖一个节点区间时可以直接对这个节点打上标记，而不需要一直做下去。</p></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.053edf5b.js" defer></script><script src="/assets/js/3.9a584920.js" defer></script><script src="/assets/js/104.9f09a556.js" defer></script>
+  </body>
+</html>
