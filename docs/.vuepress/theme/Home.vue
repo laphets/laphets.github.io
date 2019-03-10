@@ -94,7 +94,7 @@ export default {
                 line-height: 1.3em;
                 letter-spacing: 1px;
                 div {
-                    margin: 0px 10px;
+                    margin: 0px 12px;
                     a {
                         color: #fff !important;
                     }

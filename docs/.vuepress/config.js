@@ -14,6 +14,10 @@ module.exports = {
         {
             text: 'Resume',
             link: '/resume.pdf'
+        },
+        {
+            text: 'About',
+            link: '/about/'
         }
         ],
     },
