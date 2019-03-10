@@ -60,7 +60,8 @@ export default {
 .outer {
     color: #fff;
     height: 100vh;
-    width: 100vw;
+    // width: 100vw;
+    padding: 0px 10px;
     // bottom: 0;
     background-size: cover;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
