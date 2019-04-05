@@ -12,8 +12,8 @@ The bugs I have submitted patch for
 - [D21838: Bug 1443089 - Better UI/UX for empty response panel. r=honza.](https://phabricator.services.mozilla.com/D21838)  (*landed*)
 - [D21955: Bug 1446018 - Set HAR log version to 1.2. r=honza.](https://phabricator.services.mozilla.com/D21955) (*landed*)
 - [D21971: Bug 1457379 - Fix webSockets show only under 'other' filter. r=honza.](https://phabricator.services.mozilla.com/D21971) (*landed*)
-- [D23322: Bug 1457379 - [Adding Tests] Fix webSockets show only under 'other' filter. r=honza.](https://phabricator.services.mozilla.com/D23322)
-- [D23770: Bug 1442249 - Add Copy context menu to PropertiesView. r=honza](https://phabricator.services.mozilla.com/D23770)
+- [D23322: Bug 1457379 - [Adding Tests] Fix webSockets show only under 'other' filter. r=honza.](https://phabricator.services.mozilla.com/D23322) (*landed*)
+- [D23770: Bug 1442249 - Add Copy context menu to PropertiesView. r=honza](https://phabricator.services.mozilla.com/D23770) (*landed*)
 
 ## Bug 1442249
 ### What I do
