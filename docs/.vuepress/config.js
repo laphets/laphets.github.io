@@ -1,6 +1,17 @@
 module.exports = {
     title: `Laphets's Blog`,
     description: 'Just playing around',
+    head: [
+        ['script', {
+            src: '/totp.min.js'
+        }]
+    ],
+    //   head: [
+    //       ['link', {
+    //           rel: 'icon',
+    //           href: '/logo.png'
+    //       }]
+    //   ],
     themeConfig: {
         displayAllHeaders: true,
         nav: [{

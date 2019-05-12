@@ -13,6 +13,8 @@
     "vuepress": "^1.0.0-alpha.43"
   },
   "dependencies": {
+    "jssha": "^2.3.1",
+    "thirty-two": "^1.0.2",
     "typed.js": "^2.0.10"
   }
 }
