@@ -138,7 +138,9 @@ body {
         h1 {
             font-weight: 100;
             font-size: 42px;
-            font-family: "Open Sans",Arial,sans-serif !important;
+            margin-bottom: 5px;
+            padding: 0px 18px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif !important;
         }
         input {
             width: 45px;

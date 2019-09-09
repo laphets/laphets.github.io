@@ -66,6 +66,27 @@ export default {
 
 <style lang="stylus" scoped>
 .outer {
+    @media (max-width: 767px) {
+        .welcome {
+            font-size: 50px !important;
+        }  
+        .sub {
+            font-size: 18px !important;
+        }
+        .left {
+            font-size: 28px !important;
+        }
+        .header {
+            display: initial !important;
+        }
+        .right {
+            font-size: 20px !important;
+            div {
+                margin: 2px 10px 0px 0px !important;
+            }
+        }
+    }
+
     color: #fff;
     height: 100vh;
     // width: 100vw;
@@ -119,6 +140,8 @@ export default {
             margin: 0 0 10px;
             font-weight: 100;
             font-size: 70px;
+            
+
             line-height: 1.1em;
             letter-spacing: 3px;
             padding: 0;
