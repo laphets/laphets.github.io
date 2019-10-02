@@ -1,6 +1,11 @@
 <template>
     <div class="container">
-        <div class="outer">
+        <div class="outer" :style="bgObj">
+            <div class="circle xxlarge shade1"></div>
+            <div class="circle xlarge shade2"></div>
+            <div class="circle large shade3"></div>
+            <div class="circle medium shade4"></div>
+            <div class="circle small shade5"></div>
             <div class="container-outer">
                 <div class="header">
                     <div class="left">
@@ -49,6 +54,14 @@
 <script>
 import Typed from 'typed.js';
 export default {
+    data() {
+        return {
+            bgObj: {
+                background: '#3399ff'
+                // background: 'radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 42%, rgba(0,144,255,1) 100%)'
+            }
+        }
+    },
     created() {
         // console.log(this)
         // console.log(this.$site)
@@ -60,12 +73,85 @@ export default {
             typeSpeed: 60,
             showCursor: false,
         });
+
+        // setTimeout(() => {
+        //     this.bgObj.background = 'radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 90%, rgba(0,144,255,1) 100%)';
+        // }, 2000);
     }
 }
 </script>
 
 <style lang="stylus" scoped>
 .outer {
+
+    .circle{
+        position: absolute;
+        border-radius: 50%;
+        background: white;
+        animation: ripple 15s infinite;
+        box-shadow: 0px 0px 1px 0px #508fb9;
+    }
+    .small{
+        width: 180px;
+        height: 180px;
+        left: -90px;
+        bottom: -90px;
+    }
+    .medium{
+        width: 400px;
+        height: 400px;
+        left: -200px;
+        bottom: -200px;
+    }
+    .large{
+        width: 600px;
+        height: 600px;
+        left: -300px;
+        bottom: -300px;
+    }
+    .xlarge{
+        width: 800px;
+        height: 800px;
+        left: -400px;
+        bottom: -400px;
+    }
+    .xxlarge{
+        width: 1000px;
+        height: 1000px;
+        left: -500px;
+        bottom: -500px;
+    }
+    .shade1{
+        opacity: 0.2;
+    }
+    .shade2{
+        opacity: 0.3;
+    }
+    .shade3{
+        opacity: 0.5;
+    }
+    .shade4{
+        opacity: 0.6;
+    }
+    .shade5{
+        opacity: 0.7;
+    }
+    @keyframes ripple{
+        0%{
+            transform: scale(0.8);
+        }
+        
+        50%{
+            transform: scale(1.2);
+        }
+        
+        100%{
+            transform: scale(0.8);
+        }
+    }
+
+
+
     @media (max-width: 767px) {
         .welcome {
             font-size: 50px !important;
@@ -166,7 +252,7 @@ export default {
             
         }
     }
-    background-color: #000;
+    transition: background 2s;
     // background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAYklEQVQIWwFXAKj/AXRJff/8AvkA2/PoACQtLwDf5e0AEQYAABQP/gABgVyR/wkVBgDk9/QABwANAPj28QAO8PcAFwMHAAFbQ3T/+wL7AD4wOQDW4+QAIyQZANm8zQA2GicA1MwgQu1Sq8AAAAAASUVORK5CYII=");
 
 }
