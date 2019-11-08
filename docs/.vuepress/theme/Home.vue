@@ -25,7 +25,7 @@
                     <!-- 404 FOUND EVERYTHING -->
                 </div>
                 <div class="sub">
-                    Pick up what is missed. Treasure what should be treasured!
+                    How creative bug maker makes creative bugs -->
                 </div>
                 
             </main>
@@ -69,7 +69,7 @@ export default {
     },
     mounted() {
         const typed = new Typed('.welcome', {
-            strings: ["404 FOUND NOTHING", "404 FOUND EVERYTHING"],
+            strings: ["404 FOUND NOTHING", "418 I'M A TEAPOT"],
             typeSpeed: 60,
             showCursor: false,
         });
