@@ -25,7 +25,7 @@
                     <!-- 404 FOUND EVERYTHING -->
                 </div>
                 <div class="sub">
-                    How creative bug maker makes creative bugs -->
+                    How a creative bug maker makes creative bugs -->
                 </div>
                 
             </main>
