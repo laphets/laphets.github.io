@@ -24,8 +24,8 @@ module.exports = {
         },
         {
             text: 'Resume',
-            link: '/resume.pdf',
-            nonroute: true
+            link: '/resume/',
+            // nonroute: true
         },
         {
             text: 'About',
