@@ -1,6 +1,11 @@
 module.exports = {
     title: `Laphets's Blog`,
     description: 'Just playing around',
+    plugins: {
+        'disqus': {
+            shortname: 'laphetss-blog'
+        }
+    },
     head: [
         ['script', {
             src: '/totp.min.js'

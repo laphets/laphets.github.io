@@ -1,7 +1,7 @@
 ---
 title: AVL 
 date: 2019-04-19 14:56:23
-comments: true
+comments: false
 tags: Programming
 categories: DS
 ---

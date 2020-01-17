@@ -20,6 +20,7 @@
     "moment": "^2.24.0",
     "thirty-two": "^1.0.2",
     "typed.js": "^2.0.10",
+    "vuepress-plugin-disqus": "^0.2.0",
     "vuetify": "^2.2.4"
   }
 }

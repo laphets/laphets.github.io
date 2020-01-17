@@ -183,6 +183,9 @@
                   v-model="dialog_form.categories"
                 ></v-text-field>
               </v-col>
+                <v-col cols="12" sm="6" md="6">
+                <v-switch v-model="dialog_form.comments" :label="`Enable Comments: ${dialog_form.comments.toString()}`"></v-switch>
+              </v-col>
 
             </v-row>
           </v-container>
@@ -261,6 +264,7 @@ export default {
                 title: "",
                 categories: "",
                 tags: "",
+                comments: false,
             },
       items: [
         { text: 'Real-Time', icon: 'mdi-clock' },
@@ -378,7 +382,7 @@ export default {
             this.content = `---
 title: ${this.dialog_form.title} 
 date: ${moment().format('YYYY-MM-DD HH:mm:ss')}
-comments: true
+comments: ${this.dialog_form.comments.toString()}
 tags: ${this.dialog_form.tags}
 categories: ${this.dialog_form.categories}
 ---

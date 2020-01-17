@@ -48,9 +48,14 @@
                     </div>
                 </div>
             </div> -->
-            <div class="content">
+            <div class="content" style="width: 100%;">
                 <Content/>
+                <div v-if="$page.frontmatter.comments" style="margin-top:40px;">
+                    <Disqus  />
+                </div>
+                
             </div>
+
 
         </div>
         </div>
@@ -81,6 +86,9 @@ export default {
         }
     },
     created() {
+
+    },
+    mounted() {
 
     },
     methods: {
