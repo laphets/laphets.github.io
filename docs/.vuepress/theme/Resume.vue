@@ -17,11 +17,15 @@ export default {
         }
     },
     mounted() {
-        setInterval(() => {
+        const id = setInterval(() => {
+            console.log(id);
             this.count_down--;
             if(this.count_down == 0) {
-                window.location = "/resume.pdf"
+                window.clearInterval(id);
+                window.location = "/resume.pdf";
+                return;
             }
+
         }, 1000)
     }
 }

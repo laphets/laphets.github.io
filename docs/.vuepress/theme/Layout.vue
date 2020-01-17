@@ -18,11 +18,25 @@
             </div>
         </div>
         <div v-else>
-        <div class="page-title">
-            <router-link class="non-link" :to="'/'">{{$page.title}}</router-link>            
+        <div class="page-title-container">
+            <div class="page-title">
+                <router-link class="non-link" :to="'/'">{{$page.title}}</router-link>  
+            </div>
+            <div class="page-time">
+                {{transTime($page.frontmatter.date)}}
+            </div>
+            <div class="page-avatar">
+                <!-- <v-avatar>
+                <img
+                    src="https://cdn.vuetifyjs.com/images/john.jpg"
+                    alt="John"
+                >
+                </v-avatar> -->
+            </div>
+                      
         </div>
         <div class="body-container">
-            <div class="side-bar">
+            <!-- <div class="side-bar">
                 <div class="side-title">
                     Related Topics
                 </div>
@@ -33,7 +47,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="content">
                 <Content/>
             </div>
@@ -45,13 +59,14 @@
 </template>
 
 <script>
+import moment from 'moment';
 // import totp from "./totp.js"
 // import * as base32 from 'thirty-two';
 // const jssha = require('jssha');
 export default {
     data() {
         return {
-            not_show: true,
+            not_show: false,
             current_input: 0,
             val: {
                 0: '',
@@ -69,6 +84,9 @@ export default {
 
     },
     methods: {
+        transTime(time) {
+            return `${moment(time).format('LLLL')} (about ${moment(time).fromNow()})`;
+        },
         input(e, index) {
             this.res = ''
             if(this.val[index].length == 0)
@@ -103,10 +121,30 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 body {
     margin: 0px;
 }
+.page-title-container {
+    margin-top: 35px;
+    border-bottom: 1px solid #eaeaea;
+    .page-title {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        font-size: 36px;
+        font-weight: 600;
+    }    
+    .page-time {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        font-size: 14px;
+        color: #666666;
+        margin: 20px 0 30px 0;
+    }
+}
+
 .header-anchor {
     color: #3eaf7c;
     font-weight: 500;
@@ -135,13 +173,13 @@ body {
             color: red;
             font-size: 20px;
         }
-        h1 {
-            font-weight: 100;
-            font-size: 42px;
-            margin-bottom: 5px;
-            padding: 0px 18px;
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif !important;
-        }
+        // h1 {
+        //     font-weight: 100;
+        //     font-size: 42px;
+        //     margin-bottom: 5px;
+        //     padding: 0px 18px;
+        //     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif !important;
+        // }
         input {
             width: 45px;
             height: 45px;
@@ -160,12 +198,14 @@ body {
     }
     font-family: "Open Sans",X-LocaleSpecific,sans-serif;
     .body-container {
+        margin-top: 20px;
+        padding: 0px 14vw 40px 14vw;
         display: flex;
         .side-bar {
             padding: 20px 0px 0px 10px;
             .side-title {
                 font-size: 1.11111rem;
-                font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+                // font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
                 display: inline-block;
                 margin-bottom: 20px;
                 width: 100%;
@@ -186,17 +226,26 @@ body {
             }
         }
         .content {
-            font-family: zillaslab, Palatino,Helvetica Neue,Helvetica,Nimbus Sans L,Arial,Liberation Sans,Hiragino Sans GB,Source Han Sans CN,Source Han Sans SC,Microsoft YaHei,Wenquanyi Micro Hei,WenQuanYi Zen Hei,ST Heiti,SimHei,WenQuanYi Zen Hei Sharp,sans-serif, "Palatino Linotype" , x-locale-heading-secondary, serif;
+            // font-family: zillaslab, Palatino,Helvetica Neue,Helvetica,Nimbus Sans L,Arial,Liberation Sans,Hiragino Sans GB,Source Han Sans CN,Source Han Sans SC,Microsoft YaHei,Wenquanyi Micro Hei,WenQuanYi Zen Hei,ST Heiti,SimHei,WenQuanYi Zen Hei Sharp,sans-serif, "Palatino Linotype" , x-locale-heading-secondary, serif;
             padding: 0px 20px;
+            line-height: 2rem;
+            p {
+                font-weight: 400;
+                font-size: 1rem;
+                margin-top: 20px;
+            }
+            h2 {
+                margin-top: 20px !important;
+            }
         }
     }
 
-    .page-title {
-        font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
-        background-color: #f5f9fa;
-        font-size: 2.83333rem;
-        padding: 30px 24px 30px 24px;
-    }
+    // .page-title {
+    //     // font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+    //     background-color: #f5f9fa;
+    //     font-size: 2.83333rem;
+    //     padding: 30px 24px 30px 24px;
+    // }
 }
 
 </style>

@@ -15,6 +15,8 @@ Height: NULL? -1 : max{height(leftchild), height(rightchild}+1
 Balance: $|height(left)-height(right)|$
 If balance factor is greater than 1, we say this tree is unbalanced.
 
+<!-- more -->
+
 ## Rotate
 We define rotation by the relative position of the root. If the root is one the right(child is on the left), we say it's right rotation.
 

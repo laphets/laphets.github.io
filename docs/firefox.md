@@ -15,6 +15,8 @@ The bugs I have submitted patch for
 - [D23322: Bug 1457379 - [Adding Tests] Fix webSockets show only under 'other' filter. r=honza.](https://phabricator.services.mozilla.com/D23322) (*landed*)
 - [D23770: Bug 1442249 - Add Copy context menu to PropertiesView. r=honza](https://phabricator.services.mozilla.com/D23770) (*landed*)
 
+<!-- more -->
+
 ## Bug 1442249
 ### What I do
 Find inner logic from nested components, fulfill a right-click context menu

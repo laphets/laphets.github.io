@@ -5,7 +5,6 @@ comments: true
 tags: Programming
 categories: DS 
 ---
-
 ## Intro
 ### Why BTree?
 Since the speed to access memory is much more faster than the speed to access disk, therefore, we need a data structure to make the height as small as possible.
@@ -19,6 +18,8 @@ order: the number of children of each node, or 1+max number of element of each n
 ## Find
 Find is easy, we need only find the right interval through root to the leaf.
 Also one property the BTree has is that for each chunk of data if one node, it's sorted. So we can use binary search to do it.
+
+<!-- more -->
 
 ## Insert
 Insert is also easy, just do same as find, and inert the element into the right place. If the children length is greater than order, we need split the batch.

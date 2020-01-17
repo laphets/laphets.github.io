@@ -10,11 +10,16 @@
   "author": "Laphtes<wenqing4@illinois.edu>",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.0.0-alpha.43"
+    "vuepress": "^1.2.0"
   },
   "dependencies": {
+    "@octokit/rest": "^16.36.0",
+    "cos-js-sdk-v5": "^0.5.22",
     "jssha": "^2.3.1",
+    "mavon-editor": "^2.7.7",
+    "moment": "^2.24.0",
     "thirty-two": "^1.0.2",
-    "typed.js": "^2.0.10"
+    "typed.js": "^2.0.10",
+    "vuetify": "^2.2.4"
   }
 }

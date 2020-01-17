@@ -51,6 +51,8 @@ $E=mc^2$
 \begin{Vmatrix} a&b\\c&d \end{Vmatrix} \]
 ```
 
+<!-- more -->
+
 ### 公式组
 align对齐，gather不对齐
 ```latex
