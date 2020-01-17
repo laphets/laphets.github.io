@@ -44,7 +44,11 @@ module.exports = {
         {
             text: 'About',
             link: '/about/'
-        }
+            },
+        {
+            text: 'Admin',
+            link: '/admin/'
+        },
         ],
     },
     configureWebpack: {

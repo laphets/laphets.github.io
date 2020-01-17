@@ -116,7 +116,9 @@
             <a @click="loadFile(file.path)" href="#">{{file.name}}</a> {{file.path}} {{file.sha}}
         </div> -->
         <div id="editor">
+            <ClientOnly>
             <mavon-editor @save="mdSave" ref=md @imgAdd="imgAdd" v-model="content" language="en" style="height: 100%"></mavon-editor>
+            </ClientOnly>
         </div>
     </div>
 
@@ -220,10 +222,10 @@
 </template>
 <script>
 import { mavonEditor } from 'mavon-editor'
-import 'mavon-editor/dist/css/index.css'
-import Octokit from '@octokit/rest'
+// import Octokit from '@octokit/rest'
 import moment from 'moment';
-import COS from 'cos-js-sdk-v5'
+// import COS from 'cos-js-sdk-v5'
+
 export default {
     components: {
         mavonEditor
@@ -231,6 +233,13 @@ export default {
     },
     data() {
         return {
+            import: {
+                COS: null,
+                Octokit: null,
+                moment: null,
+            },
+            
+
             cos: null,
             octokit: null,
             owner: 'laphets',
@@ -260,7 +269,12 @@ export default {
       ],
         }
     },
-    async created() {
+    async mounted() {
+        this.import.Octokit = require('@octokit/rest');
+        this.import.COS = require('cos-js-sdk-v5');
+        this.import.moment = require('moment');
+        
+
         if(window.location.hostname == 'localhost')
             this.redirect_url = "https://github.com/login/oauth/authorize?client_id=d4ddef2f916b410ba5c5&redirect_uri=http://localhost:8080/oauth/&scope=user repo";
         else
@@ -273,7 +287,7 @@ export default {
             window.location = this.redirect_url;
             return;
         }
-        this.octokit = new Octokit({auth: this.access_token});
+        this.octokit = new this.import.Octokit({auth: this.access_token});
 
         try {
             this.user = (await this.octokit.users.getAuthenticated()).data;
@@ -287,7 +301,7 @@ export default {
     },
     methods: {
         initCOS() {
-            this.cos = new COS({
+            this.cos = new this.import.COS({
                 SecretId: atob("QUtJRDc4QmlFWlpsY0ltMzgxRlJ4S1poZVB5TFd6dmozd0tY"),
                 SecretKey: atob("NTRzVXdDR0Myd3BaOFhXS3lScTQ2V291b1c1WXZDUVg=")
             });

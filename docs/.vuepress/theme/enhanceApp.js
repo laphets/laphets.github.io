@@ -1,5 +1,6 @@
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import 'mavon-editor/dist/css/index.css'
 
 // Helpers
 import colors from 'vuetify/es5/util/colors'

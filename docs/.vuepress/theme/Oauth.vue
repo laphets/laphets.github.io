@@ -24,6 +24,10 @@ export default {
         }
     },
     created() {
+        
+
+    },
+    async mounted() {
         if(window.location.hostname == 'localhost') {
             this.client_id = "d4ddef2f916b410ba5c5";
             this.client_secret = "9ac284b8c0ce845dab3189bd5902f73cedcc8ac5";
@@ -32,9 +36,6 @@ export default {
             this.client_id = "e1e6602503dc4c81f625";
             this.client_secret = "f3baa14f0bee6fe881742457afe0d6f903ebc9e7";
         }
-
-    },
-    async mounted() {
         this.code = this.getParameterByName("code");
         
         if(this.code) {
