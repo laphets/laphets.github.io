@@ -44,7 +44,7 @@
                                         :shaped="true"
                                     >
                                         <v-card-text>
-                                        <div style="font-size: 30px; color: black; font-size: 28px; padding: 10px 0px 2px 0px;">{{post.title}}</div>
+                                        <div style="font-size: 30px; color: black; font-size: 28px; padding: 0px 0px 2px 0px;line-height: 30px;">{{post.title}}</div>
                                         <div style="color: rgba(0, 0, 0, 0.6); padding: 0px 0px 14px 0px;">{{transTime(post.frontmatter.date)}}</div>
                                         <!-- <div>{{post.excerpt}}</div> -->
                                         <div v-if="post.excerpt" v-html="post.excerpt"></div>
@@ -141,7 +141,7 @@
 
         </div>
 
-        <div class="text-center">
+        <div class="text-center" style="margin: 0px 10px 0px 10px;">
             <v-pagination
             v-model="page"
             color= "#2773eb"
@@ -250,7 +250,7 @@ export default {
 }
 @media (max-width: 767px) {
     .post-container {
-        padding: 40px 30px;
+        padding: 20px 30px 0px;
     }
 }
 
