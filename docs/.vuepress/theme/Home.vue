@@ -354,6 +354,39 @@ export default {
         }
     }
 
+    @media (max-width: 600px) {
+        .small{
+            width: 90px;
+            height: 90px;
+            left: -45px;
+            bottom: -45px;
+        }
+        .medium{
+            width: 200px;
+            height: 200px;
+            left: -100px;
+            bottom: -100px;
+        }
+        .large{
+            width: 300px;
+            height: 300px;
+            left: -150px;
+            bottom: -150px;
+        }
+        .xlarge{
+            width: 400px;
+            height: 400px;
+            left: -200px;
+            bottom: -200px;
+        }
+        .xxlarge{
+            width: 500px;
+            height: 500px;
+            left: -250px;
+            bottom: -250px;
+        }
+    }
+
     color: #fff;
     height: 100vh;
     // width: 100vw;
