@@ -280,12 +280,10 @@ export default {
         
 
         if(window.location.hostname == 'localhost')
-            this.redirect_url = "https://github.com/login/oauth/authorize?client_id=d4ddef2f916b410ba5c5&redirect_uri=http://localhost:8080/oauth/&scope=user repo";
+            this.redirect_url = "https://github.com/login/oauth/authorize?client_id=d4ddef2f916b410ba5c5&redirect_uri=http://localhost:8080/oauth/&scope=user repo gist";
         else
-            this.redirect_url = "https://github.com/login/oauth/authorize?client_id=e1e6602503dc4c81f625&redirect_uri=https://blog.laphets.com/oauth/&scope=user repo";
+            this.redirect_url = "https://github.com/login/oauth/authorize?client_id=e1e6602503dc4c81f625&redirect_uri=https://blog.laphets.com/oauth/&scope=user repo gist";
 
-
-        this.initCOS();
         this.access_token = window.localStorage.getItem("access_token");
         if(!this.access_token) {
             window.location = this.redirect_url;
@@ -302,12 +300,15 @@ export default {
             return;
         }
         await this.loadFileList();
+
+        await this.initCOS();
     },
     methods: {
-        initCOS() {
+        async initCOS() {
+            const cosData = JSON.parse((await this.octokit.gists.get({gist_id: "951130eccf85e828b5fd48f42645f088"})).data.files["COS.json"].content);
             this.cos = new this.import.COS({
-                SecretId: atob("QUtJRDc4QmlFWlpsY0ltMzgxRlJ4S1poZVB5TFd6dmozd0tY"),
-                SecretKey: atob("NTRzVXdDR0Myd3BaOFhXS3lScTQ2V291b1c1WXZDUVg=")
+                SecretId: cosData.SecretId,
+                SecretKey: cosData.SecretKey
             });
         },
         async loadFileList() {
