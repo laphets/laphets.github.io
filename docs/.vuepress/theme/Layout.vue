@@ -136,6 +136,7 @@ body {
 .page-title-container {
     margin-top: 35px;
     border-bottom: 1px solid #eaeaea;
+    padding: 0px 20px;
     .page-title {
         display: flex;
         justify-content: center;
@@ -245,6 +246,11 @@ body {
             h2 {
                 margin-top: 20px !important;
             }
+        }
+    }
+    @media (max-width: 767px) {
+        .body-container {
+            padding: 0px 40px 30px 40px;
         }
     }
 

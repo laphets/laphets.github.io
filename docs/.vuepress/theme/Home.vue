@@ -33,98 +33,110 @@
 
 
         <div class="post-container">
-            <div class="post-list">
-                <div v-for="(post, index) in paged_posts" v-if="post.title" :key="index">
-                        <v-card
-                            style="margin-bottom: 30px;"
-                            width="700"
-                            :shaped="true"
-                        >
-                            <v-card-text>
-                            <div style="font-size: 30px; color: black; font-size: 28px; padding: 10px 0px 2px 0px;">{{post.title}}</div>
-                            <div style="color: rgba(0, 0, 0, 0.6); padding: 0px 0px 14px 0px;">{{transTime(post.frontmatter.date)}}</div>
-                            <!-- <div>{{post.excerpt}}</div> -->
-                            <div v-if="post.excerpt" v-html="post.excerpt"></div>
-                            <div v-else>No Excerpt</div>
-                            <div>
-                                <v-chip
-                                style="margin:10px 0px -20px 0px;"
-                                color="#5626e1"
-                                outlined
-                                small
-                                v-if="post.frontmatter.tags"
-                                >
-                                <!-- <v-icon left>mdi-label</v-icon> -->
-                                    {{post.frontmatter.tags}}
-                                </v-chip>
+            <v-container>
+                <v-row>
+                    <v-col cols="auto" md="8" >
+                        <div class="post-list">
+                            <div v-for="(post, index) in paged_posts" v-if="post.title" :key="index">
+                                    <v-card
+                                        style="margin-bottom: 30px;"
+                                        width="700"
+                                        :shaped="true"
+                                    >
+                                        <v-card-text>
+                                        <div style="font-size: 30px; color: black; font-size: 28px; padding: 10px 0px 2px 0px;">{{post.title}}</div>
+                                        <div style="color: rgba(0, 0, 0, 0.6); padding: 0px 0px 14px 0px;">{{transTime(post.frontmatter.date)}}</div>
+                                        <!-- <div>{{post.excerpt}}</div> -->
+                                        <div v-if="post.excerpt" v-html="post.excerpt"></div>
+                                        <div v-else>No Excerpt</div>
+                                        <div>
+                                            <v-chip
+                                            style="margin:10px 0px -20px 0px;"
+                                            color="#5626e1"
+                                            outlined
+                                            small
+                                            v-if="post.frontmatter.tags"
+                                            >
+                                            <!-- <v-icon left>mdi-label</v-icon> -->
+                                                {{post.frontmatter.tags}}
+                                            </v-chip>
+                                        </div>
+                                        </v-card-text>
+                                        
+                                        <v-card-actions>
+                                        <v-btn
+                                        :to="post.path"
+                                            text
+                                            color="deep-purple accent-4"
+                                        >
+                                            View More
+                                        </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                <!-- <div class="title">
+                                    <router-link class="href" :to="post.path">
+                                        {{post.title}}
+                                    </router-link>
+                                    
+                                </div>
+                                <div class="content">
+
+                                </div>
+                                <div class="time">
+
+                                </div> -->
                             </div>
-                            </v-card-text>
-                            
-                            <v-card-actions>
-                            <v-btn
-                            :to="post.path"
-                                text
-                                color="deep-purple accent-4"
+                        </div>
+                    </v-col>
+
+                    <v-spacer></v-spacer>
+                    <v-col cols="4"  md="4">
+                        <div class="post-sidebar">
+                            <v-card
+
+                                width="300"
+                                class="mx-auto"
                             >
-                                View More
-                            </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    <!-- <div class="title">
-                        <router-link class="href" :to="post.path">
-                            {{post.title}}
-                        </router-link>
-                        
-                    </div>
-                    <div class="content">
+                                <v-navigation-drawer width="300" permanent>
+                                <v-list-item>
+                                    <v-list-item-content>
+                                    <v-list-item-title class="title">
+                                        Recommended Posts
+                                    </v-list-item-title>
+                                    </v-list-item-content>
+                                </v-list-item>
 
-                    </div>
-                    <div class="time">
+                                <v-divider></v-divider>
 
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-sidebar">
-                    <v-card
+                                <v-list
+                                    dense
+                                    nav
+                                >
+                                    <v-list-item
+                                    v-for="(post, index) in recommand_posts"
+                                    :key="index"
+                                    :to="post.path"
+                                    link
+                                    >
+                                    <!-- <v-list-item-icon> -->
+                                        <!-- <v-icon>home</v-icon> -->
+                                        <v-icon style="margin-right: 10px;">mdi-call-split</v-icon>
+                                    <!-- </v-list-item-icon> -->
 
-                        width="300"
-                        class="mx-auto"
-                    >
-                        <v-navigation-drawer width="300" permanent>
-                        <v-list-item>
-                            <v-list-item-content>
-                            <v-list-item-title class="title">
-                                Recommended Posts
-                            </v-list-item-title>
-                            </v-list-item-content>
-                        </v-list-item>
+                                    <!-- <v-list-item-content> -->
+                                        {{ post.title }}
+                                        <!-- <v-list-item-title></v-list-item-title> -->
+                                    <!-- </v-list-item-content> -->
+                                    </v-list-item>
+                                </v-list>
+                                </v-navigation-drawer>
+                            </v-card>
+                        </div>
+                    </v-col>
+                </v-row>
+            </v-container>
 
-                        <v-divider></v-divider>
-
-                        <v-list
-                            dense
-                            nav
-                        >
-                            <v-list-item
-                            v-for="(post, index) in recommand_posts"
-                            :key="index"
-                            :to="post.path"
-                            link
-                            >
-                            <!-- <v-list-item-icon> -->
-                                <!-- <v-icon>home</v-icon> -->
-                                <v-icon style="margin-right: 10px;">mdi-call-split</v-icon>
-                            <!-- </v-list-item-icon> -->
-
-                            <!-- <v-list-item-content> -->
-                                {{ post.title }}
-                                <!-- <v-list-item-title></v-list-item-title> -->
-                            <!-- </v-list-item-content> -->
-                            </v-list-item>
-                        </v-list>
-                        </v-navigation-drawer>
-                    </v-card>
-            </div>
+        
 
 
         </div>
@@ -212,11 +224,15 @@ export default {
 .post-container {
     font-family: "Roboto", sans-serif !important;
     padding: 40px 120px;
-    display: flex;
-    justify-content: space-between;
-    .post-sidebar {
-        width: 400px;
+    // display: flex;
+    // justify-content: space-between;
+    @media (max-width: 960px) {
+        .post-sidebar {
+            display: none;
+        }
     }
+
+    
     .title {
         // font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
         font-size: 24px!important;
@@ -232,6 +248,12 @@ export default {
         }
     }
 }
+@media (max-width: 767px) {
+    .post-container {
+        padding: 40px 30px;
+    }
+}
+
 .footer {
     height: 58px;
     display: flex;
@@ -364,6 +386,7 @@ export default {
             }
             .right {
                 display: flex;
+                flex-wrap: wrap;
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 1.3em;
