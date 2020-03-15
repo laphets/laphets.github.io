@@ -47,8 +47,11 @@
                                         <div style="font-size: 30px; color: black; font-size: 28px; padding: 0px 0px 2px 0px;line-height: 30px;">{{post.title}}</div>
                                         <div style="color: rgba(0, 0, 0, 0.6); padding: 0px 0px 14px 0px;">{{transTime(post.frontmatter.date)}}</div>
                                         <!-- <div>{{post.excerpt}}</div> -->
-                                        <div v-if="post.excerpt" v-html="post.excerpt"></div>
-                                        <div v-else>No Excerpt</div>
+                                        <div class="index-content">
+                                            <div v-if="post.excerpt" v-html="post.excerpt"></div>
+                                            <div v-else>No Excerpt</div>
+                                        </div>
+                                        
                                         <div>
                                             <v-chip
                                             style="margin:10px 0px -20px 0px;"
@@ -179,14 +182,45 @@ export default {
             post_per_page: 12,
             recommand_posts: [],
             right: null,
+            pages: null,
         }
     },
     created() {
+        this.$site.pages.sort(function(v1, v2) {
+            const val1 = v1.frontmatter.date;
+            const val2 = v2.frontmatter.date;
+            if(!val1) {
+                return 1;
+            }
+            if(!val2) {
+                return -1;
+            }
+            const date1 = new Date(val1);
+            const date2 = new Date(val2);
+            return date2 - date1;
+        });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if(urlParams.get("page")) {
+            const page = parseInt(urlParams.get("page"));
+            if(page && page <= this.page_length && page >= 1)
+                this.page = page;
+        }
+        
+
+        // this.$site.pages.forEach((page) => {
+        //     console.log(page.frontmatter.date)
+        // })
         // console.log(this)
         // console.log(this.$site)
         // console.log(this.$page)
     },
     mounted() {
+        console.log(this.page);
+        // this.pages = [...()];
+
+        // console.log(this.pages);
+
         const typed = new Typed('.welcome', {
             strings: ["404 FOUND NOTHING", "418 I'M A TEAPOT"],
             typeSpeed: 60,
@@ -204,9 +238,25 @@ export default {
         //     this.bgObj.background = 'radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 90%, rgba(0,144,255,1) 100%)';
         // }, 2000);
     },
+    watch: {
+        page: function(val) {
+            if (history.pushState) {
+                if(val == 1) {
+                    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                    window.history.pushState({path:newurl},'',newurl);
+                } else {
+                    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?page=${val}`;
+                    window.history.pushState({path:newurl},'',newurl);
+                }
+            }
+        }
+    },
     methods: {
         transTime(time) {
             return moment(time).format('lll');
+        },
+        next_page(data) {
+            console.log(data)
         }
     },
     computed: {

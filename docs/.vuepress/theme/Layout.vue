@@ -246,6 +246,9 @@ body {
             h2 {
                 margin-top: 20px !important;
             }
+            img {
+                width: 60%;
+            }
         }
     }
     @media (max-width: 767px) {

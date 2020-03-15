@@ -167,6 +167,14 @@
                 v-model="dialog_form.title"
                 ></v-text-field>
                 </v-col>
+                <v-col cols="12">
+                <v-text-field 
+                label="File Name" 
+                hint="file name of the post"
+                required
+                v-model="dialog_form.file_name"
+                ></v-text-field>
+                </v-col>
                 <v-col cols="12" sm="6" md="6">
                     <v-text-field
                     label="Tags"
@@ -264,6 +272,7 @@ export default {
                 title: "",
                 categories: "",
                 tags: "",
+                file_name: "",
                 comments: false,
             },
       items: [
@@ -375,7 +384,8 @@ export default {
             console.log(this.dialog_form)
             let avil_idx = 0;
             this.file_list.map((item) => { if(item.type == 'file') avil_idx++});
-            this.file_list = [{name: `${this.dialog_form.title}.md`, path: `docs/${this.dialog_form.title}.md`, sha: "", type: "file" }, ...this.file_list];
+            const file_name = this.dialog_form.file_name == "" ? this.dialog_form.title : this.dialog_form.file_name;
+            this.file_list = [{name: `${file_name}.md`, path: `docs/${file_name}.md`, sha: "", type: "file" }, ...this.file_list];
             this.current_file = this.file_list[0];
             
             this.current_selected_idx = avil_idx;
