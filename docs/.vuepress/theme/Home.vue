@@ -199,13 +199,6 @@ export default {
             const date2 = new Date(val2);
             return date2 - date1;
         });
-
-        const urlParams = new URLSearchParams(window.location.search);
-        if(urlParams.get("page")) {
-            const page = parseInt(urlParams.get("page"));
-            if(page && page <= this.page_length && page >= 1)
-                this.page = page;
-        }
         
 
         // this.$site.pages.forEach((page) => {
@@ -216,7 +209,12 @@ export default {
         // console.log(this.$page)
     },
     mounted() {
-        console.log(this.page);
+        const urlParams = new URLSearchParams(window.location.search);
+        if(urlParams.get("page")) {
+            const page = parseInt(urlParams.get("page"));
+            if(page && page <= this.page_length && page >= 1)
+                this.page = page;
+        }
         // this.pages = [...()];
 
         // console.log(this.pages);
