@@ -14,7 +14,7 @@ commit_website_files() {
 
 upload_files() {
   git remote add origin-pages https://${CODING_TOKEN}@e.coding.net/laphets/laphets.github.io/laphets.github.io.git > /dev/null 2>&1
-  git push --quiet --set-upstream origin-pages master
+  git push --set-upstream origin-pages
 }
 
 setup_git
