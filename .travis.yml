@@ -12,3 +12,6 @@ deploy:
   keep-history: true
   on:
     branch: source
+after_deploy:
+  - ./push_coding.sh
+  
