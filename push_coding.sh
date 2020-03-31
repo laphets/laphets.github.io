@@ -11,7 +11,7 @@ commit_website_files() {
   echo "============== Init Git =============="
   git init
   echo "blog-cn.laphets.com" > CNAME
-  git checkout -b static-pages
+  # git checkout -b static-pages
   git add .
   git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"
   # git checkout -b gh-pages
@@ -21,7 +21,7 @@ commit_website_files() {
 
 upload_files() {
   git remote add coding https://${CODING_USER}:${CODING_TOKEN}@e.coding.net/laphets/laphets.github.io/laphets.github.io.git > /dev/null 2>&1
-  git push --set-upstream coding static-pages -f
+  git push --set-upstream coding master -f
 }
 
 setup_git
