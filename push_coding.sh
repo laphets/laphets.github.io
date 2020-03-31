@@ -20,7 +20,7 @@ commit_website_files() {
 }
 
 upload_files() {
-  git remote add coding https://${CODING_USER}:${CODING_TOKEN}@e.coding.net/laphets/laphets.github.io/laphets.github.io.git > /dev/null 2>&1
+  git remote add coding https://${CODING_USER}:${CODING_TOKEN}@e.coding.net/laphets/laphets.git > /dev/null 2>&1
   git push --set-upstream coding master -f
 }
 
