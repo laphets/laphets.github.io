@@ -13,5 +13,4 @@ deploy:
   on:
     branch: source
 after_deploy:
-  - ./push_coding.sh
-  
+  - sh ./push_coding.sh
