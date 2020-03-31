@@ -6,18 +6,22 @@ setup_git() {
 }
 
 commit_website_files() {
-  pwd
-  ls
   cd docs/.vuepress/dist
   ls
+  echo "============== Init Git =============="
+  git init
+  echo "blog-cn.laphets.com" > CNAME
+  git checkout -b static-pages
+  git add .
+  git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"
   # git checkout -b gh-pages
   # git add . *.html
   # git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
 upload_files() {
-  git remote add origin-pages https://${CODING_TOKEN}@e.coding.net/laphets/laphets.github.io/laphets.github.io.git > /dev/null 2>&1
-  git push --set-upstream origin-pages
+  git remote add coding https://${CODING_TOKEN}@e.coding.net/laphets/laphets.github.io/laphets.github.io.git > /dev/null 2>&1
+  git push --set-upstream coding static-pages
 }
 
 setup_git
