@@ -7,6 +7,9 @@ setup_git() {
 
 commit_website_files() {
   pwd
+  ls
+  cd docs/.vuepress/dist
+  ls
   # git checkout -b gh-pages
   # git add . *.html
   # git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
