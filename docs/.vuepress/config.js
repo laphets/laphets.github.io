@@ -4,6 +4,9 @@ module.exports = {
     plugins: {
         'disqus': {
             shortname: 'laphetss-blog'
+        },
+        '@vuepress/google-analytics': {
+            'ga': 'UA-166069151-1'
         }
     },
     head: [
