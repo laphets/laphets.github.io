@@ -1,534 +1,219 @@
 <template>
     <div class="home-container">
-        <div class="outer" :style="bgObj">
-            <div class="circle xxlarge shade1"></div>
-            <div class="circle xlarge shade2"></div>
-            <div class="circle large shade3"></div>
-            <div class="circle medium shade4"></div>
-            <div class="circle small shade5"></div>
-            <div class="container-outer">
-                <div class="header">
-                    <div class="left">
-                        <router-link class="non-link" :to="'/'">{{$site.title}}</router-link>
-                    </div >
-                    <div class="right">
-                        <div v-for="(item, index) in $site.themeConfig.nav" :key="index">
-                            <router-link v-if="!item.nonroute" class="non-link" :to="item.link"><v-btn text color="#fff">{{item.text}}</v-btn></router-link>
-                            <a class="non-link" target="_blank" :href="item.link" v-else>{{item.text}}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <v-container>
+            <v-row>
+                <v-col lg="3">
+                    <v-img
+                    contain
+                    lazy-src="img/profile.jpg"
+                    height="250"
+                    src="img/profile.jpg"
+                    ></v-img>
+                </v-col>
+                <v-col lg="9">
+                    <h1>Wenqing Luo</h1>
+                    <ul>
+                        <li>Email: <a href="mailto:wenqing4@illinois.edu">wenqing4@illinois.edu</a></li>
+                        <li>GitHub: <a target="_blank" href="https://github.com/laphets">laphets</a></li>
+                        <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/wenqing-luo-823788146/">Wenqing Luo</a></li>
+                        <li>Blog: <router-link :to="'/blog'">Laphets's Blog</router-link></li>
+                    </ul>
+                    
+                    <p></p>
+                </v-col>   
+            </v-row>
 
-            <main>
-                <div class="welcome">
-                    <!-- 404 FOUND EVERYTHING -->
-                </div>
-                <div class="sub">
-                    How a creative bug maker makes creative bugs -->
-                </div>
-                
-            </main>
-        </div>
-
-
-        <div class="post-container">
-            <v-container>
-                <v-row>
-                    <v-col cols="auto" md="8" >
-                        <div class="post-list">
-                            <div v-for="(post, index) in paged_posts" v-if="post.title" :key="index">
-                                    <v-card
-                                        style="margin-bottom: 30px;"
-                                        width="700"
-                                        :shaped="true"
-                                    >
-                                        <v-card-text>
-                                        <div style="font-size: 30px; color: black; font-size: 28px; padding: 0px 0px 2px 0px;line-height: 30px;">{{post.title}}</div>
-                                        <div style="color: rgba(0, 0, 0, 0.6); padding: 0px 0px 14px 0px;">{{transTime(post.frontmatter.date)}}</div>
-                                        <!-- <div>{{post.excerpt}}</div> -->
-                                        <div class="index-content">
-                                            <div v-if="post.excerpt" v-html="post.excerpt"></div>
-                                            <div v-else>No Excerpt</div>
-                                        </div>
-                                        
-                                        <div>
-                                            <v-chip
-                                            style="margin:10px 0px -20px 0px;"
-                                            color="#5626e1"
-                                            outlined
-                                            small
-                                            v-if="post.frontmatter.tags"
-                                            >
-                                            <!-- <v-icon left>mdi-label</v-icon> -->
-                                                {{post.frontmatter.tags}}
-                                            </v-chip>
-                                        </div>
-                                        </v-card-text>
-                                        
-                                        <v-card-actions>
-                                        <v-btn
-                                        :to="post.path"
-                                            text
-                                            color="deep-purple accent-4"
-                                        >
-                                            View More
-                                        </v-btn>
-                                        </v-card-actions>
-                                    </v-card>
-                                <!-- <div class="title">
-                                    <router-link class="href" :to="post.path">
-                                        {{post.title}}
-                                    </router-link>
-                                    
-                                </div>
-                                <div class="content">
-
-                                </div>
-                                <div class="time">
-
-                                </div> -->
-                            </div>
-                        </div>
-                    </v-col>
-
-                    <v-spacer></v-spacer>
-                    <v-col cols="4"  md="4">
-                        <div class="post-sidebar">
-                            <v-card
-
-                                width="300"
-                                class="mx-auto"
-                            >
-                                <v-navigation-drawer width="300" permanent>
-                                <v-list-item>
-                                    <v-list-item-content>
-                                    <v-list-item-title class="title">
-                                        Recommended Posts
-                                    </v-list-item-title>
-                                    </v-list-item-content>
-                                </v-list-item>
-
-                                <v-divider></v-divider>
-
-                                <v-list
-                                    dense
-                                    nav
-                                >
-                                    <v-list-item
-                                    v-for="(post, index) in recommand_posts"
-                                    :key="index"
-                                    :to="post.path"
-                                    link
-                                    >
-                                    <!-- <v-list-item-icon> -->
-                                        <!-- <v-icon>home</v-icon> -->
-                                        <v-icon style="margin-right: 10px;">mdi-call-split</v-icon>
-                                    <!-- </v-list-item-icon> -->
-
-                                    <!-- <v-list-item-content> -->
-                                        {{ post.title }}
-                                        <!-- <v-list-item-title></v-list-item-title> -->
-                                    <!-- </v-list-item-content> -->
-                                    </v-list-item>
-                                </v-list>
-                                </v-navigation-drawer>
-                            </v-card>
-                        </div>
-                    </v-col>
-                </v-row>
-            </v-container>
-
-        
-
-
-        </div>
-
-        <div class="text-center" style="margin: 0px 10px 0px 10px;">
-            <v-pagination
-            v-model="page"
-            color= "#2773eb"
-            :length="page_length"
-            prev-icon="mdi-chevron-left"
-            next-icon="mdi-chevron-right"
-            :total-visible="10"
-            ></v-pagination>
-        </div>
-
-
-
-        <v-footer
-            class="footer"
-            color="#3875e3"
-            padless
+    <v-row class="card-row">
+        <v-card
+        class="mx-auto"
+        outlined
         >
-        Copyright © 2015-{{ new Date().getFullYear() }} &nbsp; <strong>Laphets</strong>. All Rights Reserved.
-        </v-footer>
+            <v-card-title class="headline">
+                Education
+            </v-card-title>
+            <v-card-text>
+            <v-list-item v-for="item in education" two-line>
+                <v-list-item-content>
+                    <v-list-item-title>
+                    {{item.school}} {{item.location}} {{item.time}}
+                    </v-list-item-title>
+                    <v-list-item-subtitle>{{item.degree}}</v-list-item-subtitle>
+                </v-list-item-content>
+            </v-list-item>
+            </v-card-text>
+        </v-card>
+    </v-row>
+
+    <v-row class="card-row">
+        <v-card
+        class="mx-auto"
+        outlined
+        >
+            <v-card-title class="headline">
+                Experience
+            </v-card-title>
+            <v-card-text>
+            <v-list-item v-for="item in experience" two-line>
+                <v-list-item-content>
+                    <v-list-item-title>
+                    {{item.company}} {{item.location}} {{item.time}}
+                    </v-list-item-title>
+                    <v-list-item-subtitle>{{item.tech}} {{item.bu}}</v-list-item-subtitle>
+
+                    <p v-for="content in item.content">
+                        {{content}}
+                    </p>
+
+                </v-list-item-content>
+            </v-list-item>
+            </v-card-text>
+        </v-card>
+    </v-row>
+
+    <v-row class="card-row">
+        <v-card
+        class="mx-auto"
+        outlined
+        >
+            <v-card-title class="headline">
+                Project
+            </v-card-title>
+            <v-card-text>
+            <v-list-item v-for="item in project" two-line>
+                <v-list-item-content>
+                    <v-list-item-title>
+                    {{item.name}} {{item.time}}
+                    </v-list-item-title>
+                    <v-list-item-subtitle>{{item.tech}} {{item.category}}</v-list-item-subtitle>
+
+                    <p v-for="content in item.content">
+                        {{content}}
+                    </p>
+
+                </v-list-item-content>
+            </v-list-item>
+            </v-card-text>
+        </v-card>
+    </v-row>
+    
+
+        </v-container>
+        
+        
     </div>
 </template>
 
 <script>
-import Typed from 'typed.js';
-import moment from 'moment';
 export default {
     data() {
         return {
-            bgObj: {
-                background: '#3399ff'
-                // background: 'radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 42%, rgba(0,144,255,1) 100%)'
-            },
-            page: 1,
-            posts: [],
-            post_per_page: 12,
-            recommand_posts: [],
-            right: null,
-            pages: null,
-        }
-    },
-    created() {
-        this.$site.pages.sort(function(v1, v2) {
-            const val1 = v1.frontmatter.date;
-            const val2 = v2.frontmatter.date;
-            if(!val1) {
-                return 1;
-            }
-            if(!val2) {
-                return -1;
-            }
-            const date1 = new Date(val1);
-            const date2 = new Date(val2);
-            return date2 - date1;
-        });
-        
+            education: [
+                {
+                    school: "Zhejiang University",
+                    location: "Hangzhou, China",
+                    time: "2017 – Present",
+                    degree: "B.E. in Computer Engineering, expected May 2021"
+                }
+            ],
+            experience: [
+                {
+                    company: "Alibaba Group.",
+                    location: "Hangzhou, China",
+                    time: "June. 2020 – Present",
+                    tech: "C++, Clang, LLVM, Tensorflow",
+                    bu: "Intern at Search and Recommendation Business Unit",
+                    content: [
+                        "Take optimization on online rank service for search infrastructure of Taobao, Tmall, Aliexpress, which support over 100K query per second.",
+                        "Build up an automated JIT compilation system for the online rank service, which uses Clang/LLVM based toolchain to rewrite dynamic part of the origin code and generate equivalent high performance static representation, and finally boosted more than 10% performance of rank service."
+                    ]
+                },
+                {
+                    company: "Bytedance Inc.",
+                    location: "Beijing, China",
+                    time: "April. 2020 – June. 2020",
+                    tech: "Golang, Thrift, Protobuf",
+                    bu: "Intern at Lark Core Services Team",
+                    content: [
+                        "",
+                        "",
 
-        // this.$site.pages.forEach((page) => {
-        //     console.log(page.frontmatter.date)
-        // })
-        // console.log(this)
-        // console.log(this.$site)
-        // console.log(this.$page)
+                    ]
+                },
+                {
+                    company: "Tencent Inc.",
+                    location: "Shenzhen, China",
+                    time: "June. 2019 – August. 2019",
+                    tech: "Golang, Kubernetes, Python, Protobuf",
+                    bu: "Intern at Cloud & Smart Industries Business Group (CSIG)",
+                    content: [
+                        "Implement a distributed performance testing tool for an inner RPC framework by providing a JavaScript Runtime(ES6+) and realtime serialization, which became an inner opensource project in Tencent.",
+                        "Build several RPC services with Golang covering more than 30 million target users, which take requests into batches and schedule&distribute them to machine learning engines by message queue.",
+                        "Build up a unified log collecting platform by logstash, Elasticsearch and Kibana, implement a Golang SDK.",
+                        "Adapt Protobuf+RPC pattern into message queue, and orchestrate auto-scalable ML engines on Kubernetes.",
+                    ]
+                },
+                {
+                    company: "YiWise Inc.",
+                    location: "Hangzhou, China",
+                    time: "June. 2018 – September. 2018",
+                    tech: "Vue, WebSocket, Electron.js, Typescript",
+                    bu: "Software Developer of Summer Intern",
+                    content: [
+                        "Building an AI call platform application with Vue and Typescript, as well as a multi-thread record audio downloader with electron.js.",
+                        "Implement the authentication and permission part of the platform.",
+                        "Lead the restructure for original codebase with TypeScript.",
+                        "Implement real-time call service by using WebSocket and WebRTC.",
+                        "Build up CI/CD pipeline for the front-end application by using docker.",
+                    ]
+                },
+            ],
+            project: [
+                {
+                    name: "WeirdOS",
+                    time: "October. 2019 – December. 2019",
+                    tech: "Pure C, Assemble(x86), Qemu",
+                    category: "Course Project",
+                    content: [
+                        "WeirdOS is a Linux like operating system under x86-32 instruction set, which is derived from final project of ECE391@UIUC. The project won 2nd place in ECE391 final competition sponsored by Microsoft. The following features were implemented in the OS,",
+                        "Course required features: memory paging, read-only filesystem, context switch, Round-robin scheduler, interrupt handlers, system calls.",
+                        "Extra features: dynamic memory allocator, DOM based GUI and layer1-5 network stack.",
+                        "A plain Internet browser by combining GUI and network stack.",
+                    ]
+                },
+                {
+                    name: "Open Source Contribution for VSCode and FireFox",
+                    time: "August. 2018 – Present",
+                    tech: "TypeScript, Electron.js, React",
+                    category: "Fixed several bugs as well as adding features",
+                    content: [
+                        "WeirdOS is a Linux like operating system under x86-32 instruction set, which is derived from final project of ECE391@UIUC. The project won 2nd place in ECE391 final competition sponsored by Microsoft. The following features were implemented in the OS,",
+                        "Course required features: memory paging, read-only filesystem, context switch, Round-robin scheduler, interrupt handlers, system calls.",
+                        "Extra features: dynamic memory allocator, DOM based GUI and layer1-5 network stack.",
+                        "A plain Internet browser by combining GUI and network stack.",
+                    ]
+                },
+                {
+                    name: "WeirdOS",
+                    time: "October. 2019 – December. 2019",
+                    tech: "Pure C, Assemble(x86), Qemu",
+                    content: [
+                        "Brief introduction: Later 2018, I participated development of the open source project – VSCode, help the team fix several bugs related to git module and search widget. This experience brought me a strong interest in contributing for open source project. In 2019, I joined the Mozilla Developer community, making contribution for FireFox DevTools, which is challenging and also interesting.",
+                    ]
+                },
+            ]
+        }
     },
     mounted() {
-        const urlParams = new URLSearchParams(window.location.search);
-        if(urlParams.get("page")) {
-            const page = parseInt(urlParams.get("page"));
-            if(page && page <= this.page_length && page >= 1)
-                this.page = page;
-        }
-        // this.pages = [...()];
-
-        // console.log(this.pages);
-
-        const typed = new Typed('.welcome', {
-            strings: ["404 FOUND NOTHING", "418 I'M A TEAPOT"],
-            typeSpeed: 60,
-            showCursor: false,
-        });
-
-        for(let i = 0; i < 8; i++) {
-            const post = this.$site.pages[Math.floor((Math.random()*this.$site.pages.length))]
-            if(!post.title)
-                continue;
-            this.recommand_posts.push({title: post.title, path: post.path})
-        }
-
-        // setTimeout(() => {
-        //     this.bgObj.background = 'radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 90%, rgba(0,144,255,1) 100%)';
-        // }, 2000);
-    },
-    watch: {
-        page: function(val) {
-            if (history.pushState) {
-                if(val == 1) {
-                    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-                    window.history.pushState({path:newurl},'',newurl);
-                } else {
-                    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?page=${val}`;
-                    window.history.pushState({path:newurl},'',newurl);
-                }
-            }
-        }
-    },
-    methods: {
-        transTime(time) {
-            return moment(time).format('lll');
-        },
-        next_page(data) {
-            console.log(data)
-        }
-    },
-    computed: {
-        paged_posts() {
-            return (this.$site.pages).slice((this.page-1) * this.post_per_page, this.page * this.post_per_page);
-        },
-        page_length() {
-            return Math.ceil(this.$site.pages.length / this.post_per_page)
-        }
+        
     }
 }
 </script>
 
 <style lang="stylus" scoped>
-.post-container {
-    font-family: "Roboto", sans-serif !important;
-    padding: 40px 120px;
-    // display: flex;
-    // justify-content: space-between;
-    @media (max-width: 960px) {
-        .post-sidebar {
-            display: none;
-        }
+.home-container {
+    .card-row {
+        margin: 12px 0px;
+        width: 100%;
     }
-
-    
-    .title {
-        // font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
-        font-size: 24px!important;
-        line-height: 28px!important;
-        -webkit-transform: translateY(-.72px);
-        transform: translateY(-.72px);
-        letter-spacing: -.42px!important;
-        text-overflow: ellipsis!important;
-        .href {
-            text-decoration:none;
-            out-line: none;
-            color: rgba(0,0,0,.84);
-        }
-    }
-}
-@media (max-width: 767px) {
-    .post-container {
-        padding: 20px 30px 0px;
-    }
-}
-
-.footer {
-    height: 58px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    color: white;
-    margin-top: 40px;
-}
-
-.outer {
-
-    .circle{
-        position: absolute;
-        border-radius: 50%;
-        background: white;
-        animation: ripple 15s infinite;
-        box-shadow: 0px 0px 1px 0px #508fb9;
-    }
-    .small{
-        width: 180px;
-        height: 180px;
-        left: -90px;
-        bottom: -90px;
-    }
-    .medium{
-        width: 400px;
-        height: 400px;
-        left: -200px;
-        bottom: -200px;
-    }
-    .large{
-        width: 600px;
-        height: 600px;
-        left: -300px;
-        bottom: -300px;
-    }
-    .xlarge{
-        width: 800px;
-        height: 800px;
-        left: -400px;
-        bottom: -400px;
-    }
-    .xxlarge{
-        width: 1000px;
-        height: 1000px;
-        left: -500px;
-        bottom: -500px;
-    }
-    .shade1{
-        opacity: 0.2;
-    }
-    .shade2{
-        opacity: 0.3;
-    }
-    .shade3{
-        opacity: 0.5;
-    }
-    .shade4{
-        opacity: 0.6;
-    }
-    .shade5{
-        opacity: 0.7;
-    }
-    @keyframes ripple{
-        0%{
-            transform: scale(0.8);
-        }
-        
-        50%{
-            transform: scale(1.2);
-        }
-        
-        100%{
-            transform: scale(0.8);
-        }
-    }
-
-
-
-    @media (max-width: 767px) {
-        .welcome {
-            font-size: 50px !important;
-        }  
-        .sub {
-            font-size: 18px !important;
-        }
-        .left {
-            font-size: 28px !important;
-        }
-        .header {
-            display: initial !important;
-        }
-        .right {
-            font-size: 20px !important;
-            div {
-                margin: 2px 0px 0px 0px !important;
-            }
-        }
-    }
-
-    @media (max-width: 600px) {
-        .small{
-            width: 90px;
-            height: 90px;
-            left: -45px;
-            bottom: -45px;
-        }
-        .medium{
-            width: 200px;
-            height: 200px;
-            left: -100px;
-            bottom: -100px;
-        }
-        .large{
-            width: 300px;
-            height: 300px;
-            left: -150px;
-            bottom: -150px;
-        }
-        .xlarge{
-            width: 400px;
-            height: 400px;
-            left: -200px;
-            bottom: -200px;
-        }
-        .xxlarge{
-            width: 500px;
-            height: 500px;
-            left: -250px;
-            bottom: -250px;
-        }
-    }
-
-    color: #fff;
-    height: 100vh;
-    // width: 100vw;
-    padding: 0px 10px;
-    // bottom: 0;
-    background-size: cover;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-    .container-outer {
-        top: 16px;
-        position: absolute;
-        width: 93%;
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .left {
-                font-weight: 400;
-                font-size: 26px;
-                line-height: 1.3em;
-                letter-spacing: 1px;
-                a {
-                    color: #fff !important;
-                }
-            }
-            .right {
-                display: flex;
-                flex-wrap: wrap;
-                font-weight: 300;
-                font-size: 18px;
-                line-height: 1.3em;
-                letter-spacing: 1px;
-                div {
-                    margin: 0px 12px;
-                    a {
-                        color: #fff !important;
-                    }
-                }
-            }
-        }
-    }
-
-    main {
-        text-align: center;
-        color: #fff;
-        .welcome {
-            margin: 0 0 10px;
-            font-weight: 100;
-            font-size: 70px;
-            
-
-            line-height: 1.1em;
-            letter-spacing: 3px;
-            padding: 0;
-            
-            margin-block-start: 0.67em;
-            margin-block-end: 0.27em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            min-height: 77px;
-        }
-        .sub {
-            margin: 0;
-            font-weight: 200;
-            font-size: 23px;
-            line-height: 1.3em;
-            letter-spacing: 1px;
-            padding: 0;
-            margin-block-start: 0.83em;
-            margin-block-end: 0.83em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            
-        }
-    }
-    transition: background 2s;
-    // background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAYklEQVQIWwFXAKj/AXRJff/8AvkA2/PoACQtLwDf5e0AEQYAABQP/gABgVyR/wkVBgDk9/QABwANAPj28QAO8PcAFwMHAAFbQ3T/+wL7AD4wOQDW4+QAIyQZANm8zQA2GicA1MwgQu1Sq8AAAAAASUVORK5CYII=");
-
-}
-.ht {
-    font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
-    background-color: #f5f9fa;
-    font-size: 2.83333rem;
-    padding: 30px 24px 30px 24px;
-    a {
-        text-decoration:none;
-        out-line: none;
-        color: rgba(0,0,0,.84);
-    }
-
 }
 </style>

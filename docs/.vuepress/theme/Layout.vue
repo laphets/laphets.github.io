@@ -20,7 +20,7 @@
         <div v-else>
         <div class="page-title-container">
             <div class="page-title">
-                <router-link class="non-link" :to="'/'">{{$page.title}}</router-link>  
+                <router-link class="non-link" :to="'/blog'">{{$page.title}}</router-link>  
             </div>
             <div class="page-time">
                 {{transTime($page.frontmatter.date)}}
