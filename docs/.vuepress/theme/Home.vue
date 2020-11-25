@@ -29,7 +29,7 @@
                         <!-- Also I'm now intern at search engine team  -->
                     </p>
                     <p>
-                        I love opensource, I'm also the contributor of <a target="_blank" href="https://github.com/microsoft/vscode/pulls?q=is%3Apr+author%3Alaphets">VSCode</a> and <a target="_blank" href="https://hg.mozilla.org/mozilla-central/log?rev=laphets">FireFox</a>, so if you are the user of them, there must be some code from me running on your PC :)
+                        I love opensource, I'm also the contributor of <a target="_blank" href="https://github.com/microsoft/vscode/pulls?q=is%3Apr+author%3Alaphets">VSCode</a> and <a target="_blank" href="https://hg.mozilla.org/mozilla-central/log?rev=laphets">FireFox</a>. If you are using them, I promise there should be some code by me running on your PC :)
                     </p>
                 </v-col>
             </v-row>
