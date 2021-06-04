@@ -41,10 +41,6 @@ module.exports = {
             link: '/',
         },
         {
-            text: 'Old Posts',
-            link: '/old/'
-        },
-        {
             text: 'Resume',
             link: '/resume/',
             // nonroute: true

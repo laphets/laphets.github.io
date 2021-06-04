@@ -1,8 +1,8 @@
 <template>
     <div class="home-container">
         <v-container class="main-container">
-            <v-row>
-                <v-col lg="3">
+            <v-row style="line-height: 1.4;">
+                <v-col lg="3" style="margin: 20px 0px;">
                     <v-img
                     contain
                     lazy-src="img/photo.jpg"
@@ -18,12 +18,15 @@
                         <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/wenqing-luo-823788146/">Wenqing Luo</a></li>
                         <li>Blog: <router-link :to="'/blog'">Laphets's Blog</router-link></li>
                     </ul>
-                    
+                    <br>
                     <p>
-                        I'm Wenqing, a senior student at the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a>/<a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
+                        I'm Wenqing, an incoming M.S. student to <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a>, <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, advised by <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>.
+                        <br>
+                        I have recently graduted from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a>/<a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
                         major in Computer Engineering. 
-                        I'm currently intern at Search Engine Team of <a target="_blank" href="https://www.alibabagroup.com/en/global/home">Alibaba</a>, building huge scale search infrastructure supporting <a target="_blank" href="https://www.taobao.com/">Taobao</a>, <a target="_blank" href="https://www.tmall.com/">Tmall</a>, <a target="_blank" href="https://www.aliexpress.com">Aliexpress</a> etc with over 100K QPS.
-                        Before joining Alibaba, I spent my sophomore summer at  <a target="_blank" href="https://www.tencent.com/en-us">Tencent</a> building a distributed performance testing tool with JavaScript Runtime attached by <a target="_blank" href="https://golang.org/">Golang</a>, which later popularized as an inner opensource project in Tencent.
+                        <br>
+                        During my junior summer (and also senior year), I spent several months intern at Search Engine Team of <a target="_blank" href="https://www.alibabagroup.com/en/global/home">Alibaba</a>, building huge scale search infrastructure supporting <a target="_blank" href="https://www.taobao.com/">Taobao</a>, <a target="_blank" href="https://www.tmall.com/">Tmall</a>, <a target="_blank" href="https://www.aliexpress.com">Aliexpress</a> etc with over 100K QPS.
+                        Before joining Alibaba, I spent my sophomore summer at  <a target="_blank" href="https://www.tencent.com/en-us">Tencent</a> building a distributed performance testing tool with JavaScript Runtime attached by <a target="_blank" href="https://golang.org/">Golang</a>, which later popularized as an internal opensource project in Tencent.
                         During my junior year, I also spent 3 month at Lark Core Service Team of <a target="_blank" href="https://www.bytedance.com/en/">ByteDance</a>, building the core backend service for a <a target="_blank" href="https://www.larksuite.com/">Next-Gen Collaboration Suite</a>.
                         <!-- I have a widely industrial experience.  -->
                         <!-- Also I'm now intern at search engine team  -->
@@ -34,7 +37,7 @@
                 </v-col>
             </v-row>
 
-    <v-row>
+    <!-- <v-row>
         <v-card
         class="mx-auto card-row"
         outlined
@@ -123,7 +126,7 @@
             </v-list-item>
             </v-card-text>
         </v-card>
-    </v-row>
+    </v-row> -->
     
 
         </v-container>
@@ -241,6 +244,12 @@ export default {
 
 <style lang="stylus" scoped>
 .home-container {
+    @media screen and (min-width: 800px) {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
     padding: 0px 20px;
     .card-row {
         margin: 12px 0px;
@@ -250,6 +259,7 @@ export default {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
     }
 }
 </style>
