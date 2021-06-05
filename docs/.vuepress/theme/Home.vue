@@ -20,19 +20,23 @@
                     </ul>
                     <br>
                     <p>
-                        I'm Wenqing, an incoming M.S. student to <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a>, <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, advised by <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>.
+                        I'm Wenqing, an incoming M.S. student to the <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a> at <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>.
+                        I am advised by  <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>.
                         <br>
-                        I have recently graduted from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a>/<a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
+                        I have recently graduated from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a> - <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
                         major in Computer Engineering. 
                         <br>
-                        During my junior summer (and also senior year), I spent several months intern at Search Engine Team of <a target="_blank" href="https://www.alibabagroup.com/en/global/home">Alibaba</a>, building huge scale search infrastructure supporting <a target="_blank" href="https://www.taobao.com/">Taobao</a>, <a target="_blank" href="https://www.tmall.com/">Tmall</a>, <a target="_blank" href="https://www.aliexpress.com">Aliexpress</a> etc with over 100K QPS.
-                        Before joining Alibaba, I spent my sophomore summer at  <a target="_blank" href="https://www.tencent.com/en-us">Tencent</a> building a distributed performance testing tool with JavaScript Runtime attached by <a target="_blank" href="https://golang.org/">Golang</a>, which later popularized as an internal opensource project in Tencent.
-                        During my junior year, I also spent 3 month at Lark Core Service Team of <a target="_blank" href="https://www.bytedance.com/en/">ByteDance</a>, building the core backend service for a <a target="_blank" href="https://www.larksuite.com/">Next-Gen Collaboration Suite</a>.
+                        During my undergraduate study, I worked at the Search Engine team of <a target="_blank" href="https://www.alibabagroup.com/en/global/home">Alibaba</a>, building large-scale search infrastructure supporting <a target="_blank" href="https://www.taobao.com/">Taobao</a>, <a target="_blank" href="https://www.tmall.com/">Tmall</a>, <a target="_blank" href="https://www.aliexpress.com">Aliexpress</a> etc with over 100K QPS in total.
+                        Before joining Alibaba, I also worked with <a target="_blank" href="https://www.tencent.com/en-us">Tencent</a> to build a distributed performance testing system which attaches a JavaScript Runtime backed by <a target="_blank" href="https://golang.org/">Golang</a>. The project later becomes a popular production-grade project used by many teams at Tencent.
+                        I also worked at the networking and virtualization team of <a target="_blank" href="https://www.bytedance.com/en/">ByteDance</a>, using the <a target="_blank" href="https://en.wikipedia.org/wiki/TCP_offload_engine">Kernel-Bypass strategy</a> to optimize <a target="_blank" href="https://en.wikipedia.org/wiki/Service_mesh">service mesh</a> performance.
+                        <!-- During my junior year, I also spent 3 month at Lark Core Service Team of <a target="_blank" href="https://www.bytedance.com/en/">ByteDance</a>, building the core backend service for a <a target="_blank" href="https://www.larksuite.com/">Next-Gen Collaboration Suite</a>. -->
                         <!-- I have a widely industrial experience.  -->
                         <!-- Also I'm now intern at search engine team  -->
                     </p>
                     <p>
-                        I love opensource, I'm also the contributor of <a target="_blank" href="https://github.com/microsoft/vscode/pulls?q=is%3Apr+author%3Alaphets">VSCode</a> and <a target="_blank" href="https://hg.mozilla.org/mozilla-central/log?rev=laphets">FireFox</a>. If you are using them, I promise there should be some code by me running on your PC :)
+                        I love open-source, and enjoy the process of building a project which can benefit many others' lives. 
+                        
+                        I'm also a contributor of <a target="_blank" href="https://github.com/microsoft/vscode/pulls?q=is%3Apr+author%3Alaphets">VSCode</a> and <a target="_blank" href="https://hg.mozilla.org/mozilla-central/log?rev=laphets">FireFox</a>. If you are using them, you are running some code written by me :)
                     </p>
                 </v-col>
             </v-row>
@@ -248,6 +252,7 @@ export default {
         height: 100vh;
         display: flex;
         align-items: center;
+        
     }
     
     padding: 0px 20px;
@@ -261,5 +266,12 @@ export default {
         justify-content: space-between;
         
     }
+
+    
 }
+.main-container {
+        @media screen and (min-width: 1264px) {
+            margin-bottom: 50px;
+        }
+    }
 </style>
