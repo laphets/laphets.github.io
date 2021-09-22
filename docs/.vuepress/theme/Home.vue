@@ -27,7 +27,7 @@
                     </p>
 
                     <p>
-                        I'm now working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a>, which uses partial histories to automatically detect and replay bugs in <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a>. So far, our project has successfully detected more than 20 bugs (with 3 major types) in several popular used Kubernetes operators.
+                        I'm now working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a>, which uses partial histories to automatically detect and replay bugs in <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a>. So far, our project has successfully detected more than 30 bugs (with 3 major types) in several popular used Kubernetes operators.
                     </p>
 
                     <p>
