@@ -187,7 +187,6 @@ export default {
         }
     },
     created() {
-        document.title = this.title;
         this.$site.pages.sort(function(v1, v2) {
             const val1 = v1.frontmatter.date;
             const val2 = v2.frontmatter.date;
@@ -211,6 +210,7 @@ export default {
         // console.log(this.$page)
     },
     mounted() {
+        document.title = this.title;
         const urlParams = new URLSearchParams(window.location.search);
         if(urlParams.get("page")) {
             const page = parseInt(urlParams.get("page"));
