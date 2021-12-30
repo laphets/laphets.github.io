@@ -291,7 +291,7 @@ export default {
         if(window.location.hostname == 'localhost')
             this.redirect_url = "https://github.com/login/oauth/authorize?client_id=d4ddef2f916b410ba5c5&redirect_uri=http://localhost:8080/oauth/&scope=user repo gist";
         else
-            this.redirect_url = "https://github.com/login/oauth/authorize?client_id=e1e6602503dc4c81f625&redirect_uri=https://blog.laphets.com/oauth/&scope=user repo gist";
+            this.redirect_url = "https://github.com/login/oauth/authorize?client_id=e1e6602503dc4c81f625&redirect_uri=https://laphets.com/oauth/&scope=user repo gist";
 
         this.access_token = window.localStorage.getItem("access_token");
         if(!this.access_token) {

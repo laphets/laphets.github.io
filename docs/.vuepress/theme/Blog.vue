@@ -9,7 +9,8 @@
             <div class="container-outer">
                 <div class="header">
                     <div class="left">
-                        <router-link class="non-link" :to="'/'">{{$site.title}}</router-link>
+                        <router-link class="non-link" :to="'/'">{{title}}</router-link>
+                        <!-- <router-link class="non-link" :to="'/'">{{$site.title}}</router-link> -->
                     </div >
                     <div class="right">
                         <div v-for="(item, index) in $site.themeConfig.nav" :key="index">
@@ -39,8 +40,7 @@
                         <div class="post-list">
                             <div v-for="(post, index) in paged_posts" v-if="post.title" :key="index">
                                     <v-card
-                                        style="margin-bottom: 30px;"
-                                        width="700"
+                                        style="margin: 0px 5px 30px 5px;"
                                         :shaped="true"
                                     >
                                         <v-card-text>
@@ -173,6 +173,7 @@ import moment from 'moment';
 export default {
     data() {
         return {
+            title: `Laphets's Blog`,
             bgObj: {
                 background: '#3399ff'
                 // background: 'radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 42%, rgba(0,144,255,1) 100%)'
@@ -186,6 +187,7 @@ export default {
         }
     },
     created() {
+        document.title = this.title;
         this.$site.pages.sort(function(v1, v2) {
             const val1 = v1.frontmatter.date;
             const val2 = v2.frontmatter.date;

@@ -1,5 +1,5 @@
 module.exports = {
-    title: `Laphets's Blog`,
+    title: `Wenqing's Homepage`,
     description: 'Just playing around',
     plugins: {
         'disqus': {
