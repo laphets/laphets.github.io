@@ -33,6 +33,10 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                     </p>
 
                     <p>
+                        I will be joining <a target="_blank" href="https://apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a> in the incoming summer. <span style="color: white;"> Switching to use Safari these days ::</span>
+                    </p>
+
+                    <p>
                         During my undergraduate study, I worked at the Search Engine team of <a target="_blank" href="https://www.alibabagroup.com/en/global/home">Alibaba</a>, building large-scale search infrastructure supporting <a target="_blank" href="https://www.taobao.com/">Taobao</a>, <a target="_blank" href="https://www.tmall.com/">Tmall</a>, <a target="_blank" href="https://www.aliexpress.com">Aliexpress</a> etc with over 100K QPS in total.
                         Before joining Alibaba, I also worked with <a target="_blank" href="https://www.tencent.com/en-us">Tencent</a> to build a distributed performance testing system which attaches a JavaScript Runtime backed by <a target="_blank" href="https://golang.org/">Golang</a>. The project later becomes a popular production-grade project used by many teams at Tencent.
                         I also worked at the networking and virtualization team of <a target="_blank" href="https://www.bytedance.com/en/">ByteDance</a>, using the <a target="_blank" href="https://en.wikipedia.org/wiki/TCP_offload_engine">Kernel-Bypass strategy</a> to optimize <a target="_blank" href="https://en.wikipedia.org/wiki/Service_mesh">service mesh</a> performance.
