@@ -33,7 +33,7 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                     </p>
 
                     <p>
-                        I will be joining <a target="_blank" href="https://apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a> in the incoming summer. <span style="color: white;"> Switching to use Safari these days ::</span>
+                        I will be joining <a target="_blank" href="https://apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> (and YES <a target="_blank" href="https://webkit.org">WebKit</a>!) for the incoming summer. <span style="color: white;"> Switching to use Safari these days ::</span>
                     </p>
 
                     <p>
