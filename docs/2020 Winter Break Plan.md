@@ -15,3 +15,4 @@ categories: plan
 - [ ] 50 words
 - [ ] prepare for writing
 - [ ] 1 distributed system video
+- [ ] test
