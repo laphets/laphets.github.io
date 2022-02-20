@@ -7,7 +7,10 @@ module.exports = {
         },
         '@vuepress/google-analytics': {
             'ga': 'UA-166069151-1'
-        }
+        },
+        // '@vuepress/last-updated': {
+
+        // }
     },
     head: [
         ['script', {
@@ -26,7 +29,8 @@ module.exports = {
                 rel: 'stylesheet',
                 href: 'https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css'
             }
-        ]
+        ],
+        ['link', { rel: "icon", type: "image/png", href: "favicon.png"}],
     ],
     //   head: [
     //       ['link', {

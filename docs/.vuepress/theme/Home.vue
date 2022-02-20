@@ -15,14 +15,14 @@
                     <ul>
                         <li>Email: <a href="mailto:wenqing4@illinois.edu">wenqing4@illinois.edu</a></li>
                         <li>GitHub: <a target="_blank" href="https://github.com/laphets">laphets</a></li>
-                        <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/wenqing-luo-823788146/">Wenqing Luo</a></li>
+                        <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/wenqingluo">Wenqing Luo</a></li>
                         <li>Blog: <router-link :to="'/blog'">Laphets's Blog</router-link></li>
                     </ul>
                     <br>
                     <p>
                         I'm Wenqing, a first year M.S. student in the <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a> at <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>.
                         I am advised by  <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>.
-                        I have recently graduated from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a> - <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
+                        I got my bachelor degree from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a> - <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
                         major in Computer Engineering. 
                     </p>
 
@@ -33,7 +33,8 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                     </p>
 
                     <p>
-                        I will be joining <a target="_blank" href="https://www.apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> (and YES <a target="_blank" href="https://webkit.org">WebKit</a>!) for the incoming summer. <span style="color: white;"> Switching to use Safari these days ::</span>
+                        I will be joining <a target="_blank" href="https://www.apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> (and YES <a target="_blank" href="https://webkit.org">WebKit</a>!) for the coming summer.
+                        <!-- <span style="color: white;"> Switching to use Safari these days ::</span> -->
                     </p>
 
                     <p>
@@ -285,7 +286,7 @@ export default {
             margin-bottom: 50px;
         }
         p {
-            margin: 1px 0px;
+            margin: 5px 0px;
         }
     }
 
@@ -295,4 +296,12 @@ export default {
 .apple:hover {
     color:#d6d6d6;
 }
+a:hover {
+    // color:#3d5afe;
+    // text-decoration: underline;
+    background: #e3f2fd;
+}
+// a:visited { 
+//   color: pink;
+// }
 </style>

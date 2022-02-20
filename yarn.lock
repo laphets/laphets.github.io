@@ -1087,11 +1087,12 @@
   dependencies:
     "@vuepress/types" "1.9.5"
 
-"@vuepress/plugin-last-updated@^1.2.0":
-  "integrity" "sha512-j4uZb/MXDyG+v9QCG3T/rkiaOhC/ib7NKCt1cjn3GOwvWTDmB5UZm9EBhUpbDNrBgxW+SaHOe3kMVNO8bGOTGw=="
-  "resolved" "https://registry.npmjs.org/@vuepress/plugin-last-updated/-/plugin-last-updated-1.2.0.tgz"
-  "version" "1.2.0"
+"@vuepress/plugin-last-updated@^1.2.0", "@vuepress/plugin-last-updated@^1.9.7":
+  "integrity" "sha512-FiFBOl49dlFRjbLRnRAv77HDWfe+S/eCPtMQobq4/O3QWuL3Na5P4fCTTVzq1K7rWNO9EPsWNB2Jb26ndlQLKQ=="
+  "resolved" "https://registry.npmjs.org/@vuepress/plugin-last-updated/-/plugin-last-updated-1.9.7.tgz"
+  "version" "1.9.7"
   dependencies:
+    "@vuepress/types" "1.9.7"
     "cross-spawn" "^6.0.5"
 
 "@vuepress/plugin-nprogress@^1.2.0":
@@ -1147,6 +1148,15 @@
   "integrity" "sha512-fu1Wyi+cPFyn7nfxNH4MVvU5glYvRB0RMI7besq9kiI/KkZJPb2G1hITopECJOGk+6G/cOU/iSdUDUHH4GQLgA=="
   "resolved" "https://registry.npmjs.org/@vuepress/types/-/types-1.9.5.tgz"
   "version" "1.9.5"
+  dependencies:
+    "@types/markdown-it" "^10.0.0"
+    "@types/webpack-dev-server" "^3"
+    "webpack-chain" "^6.0.0"
+
+"@vuepress/types@1.9.7":
+  "integrity" "sha512-moLQzkX3ED2o18dimLemUm7UVDKxhcrJmGt5C0Ng3xxrLPaQu7UqbROtEKB3YnMRt4P/CA91J+Ck+b9LmGabog=="
+  "resolved" "https://registry.npmjs.org/@vuepress/types/-/types-1.9.7.tgz"
+  "version" "1.9.7"
   dependencies:
     "@types/markdown-it" "^10.0.0"
     "@types/webpack-dev-server" "^3"
