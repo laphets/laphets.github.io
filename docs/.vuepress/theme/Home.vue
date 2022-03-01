@@ -2,23 +2,25 @@
     <div class="home-container">
         <v-container class="main-container">
             <v-row style="line-height: 1.4;">
-                <v-col lg="3" style="margin: 20px 0px;">
+                <v-col lg="3" class="img-container">
                     <v-img
                     contain
                     lazy-src="img/photo.jpg"
                     height="250"
                     src="img/photo.jpg"
                     ></v-img>
+                    <div class="img-caption">Aug 2020 @ Hulunbuir</div>
                 </v-col>
                 <v-col lg="9">
-                    <h1>Wenqing Luo <a style="font-size: 20px;" target="_blank" href="resume.pdf">[CV]</a></h1>  
+                    <h1>Wenqing Luo <a style="font-size: 20px; font-weight: 500;" target="_blank" href="resume.pdf">[CV]</a></h1>  
+                    <!-- <h2>Connect</h2> -->
                     <ul>
                         <li>Email: <a href="mailto:wenqing4@illinois.edu">wenqing4@illinois.edu</a></li>
                         <li>GitHub: <a target="_blank" href="https://github.com/laphets">laphets</a></li>
                         <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/wenqingluo">Wenqing Luo</a></li>
                         <li>Blog: <router-link :to="'/blog'">Laphets's Blog</router-link></li>
                     </ul>
-                    <br>
+                    <h2>About</h2>
                     <p>
                         I'm Wenqing, a first year M.S. student in the <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a> at <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>.
                         I am advised by  <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>.
@@ -260,7 +262,7 @@ export default {
 
 <style lang="stylus" scoped>
 .home-container {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1264px) {
         height: 100vh;
         display: flex;
         align-items: center;
@@ -300,6 +302,35 @@ a:hover {
     // color:#3d5afe;
     // text-decoration: underline;
     background: #e3f2fd;
+}
+h1 {
+    // font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 0px 0px 2px 0px;
+}
+h2 {
+    // font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.45em;
+    margin: 6px 0px 3px 0px;
+}
+ul {
+  list-style-type: none !important; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+.img-caption {
+    text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+    margin-top: 3px;
+    color: white;
+}
+.img-container {
+    margin: 20px 0px 0px 0px;
+    @media screen and (min-width: 1264px) {
+        margin: 10px 0px;
+    }
 }
 // a:visited { 
 //   color: pink;
