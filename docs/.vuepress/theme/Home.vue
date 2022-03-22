@@ -29,10 +29,12 @@
                     </p>
 
                     <p>
-                        I'm now working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a>, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
+                        I was working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a> during the last year, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
 scenarios like asynchrony, unexpected failures, networking issues, and controller restarts. So far, our project has already discovered (and led to fixes for) more than 30 safety-critical bugs in popular
 Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                     </p>
+
+                    <p>Great news that the Sieve project is accepted to <a target="_blank" href="https://www.usenix.org/conference/osdi22">OSDI22</a>!</p>
 
                     <p>
                         I will be joining <a target="_blank" href="https://www.apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> (and YES <a target="_blank" href="https://webkit.org">WebKit</a>!) for the coming summer.
