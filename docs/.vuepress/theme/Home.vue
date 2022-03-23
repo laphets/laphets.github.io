@@ -31,10 +31,9 @@
                     <p>
                         I was working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a> during the last year, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
 scenarios like asynchrony, unexpected failures, networking issues, and controller restarts. So far, our project has already discovered (and led to fixes for) more than 30 safety-critical bugs in popular
-Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
+Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc. The <a style="cursor: pointer;" @click="dialog = true">Sieve paper</a> was accepted to <a target="_blank" href="https://www.usenix.org/conference/osdi22">OSDI'22</a>!
                     </p>
 
-                    <p>Great news that the Sieve project is accepted to <a target="_blank" href="https://www.usenix.org/conference/osdi22">OSDI22</a>!</p>
 
                     <p>
                         I will be joining <a target="_blank" href="https://www.apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> (and YES <a target="_blank" href="https://webkit.org">WebKit</a>!) for the coming summer.
@@ -56,6 +55,25 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                     </p>
                 </v-col>
             </v-row>
+
+            <div data-app>
+                <v-dialog v-model="dialog" max-width="800">
+                <v-card>
+                    <div style="padding: 10px 12px;">
+                        <div>
+                            <b style="font-size: 18px;">Automatic Reliability Testing for Cluster Management Controllers</b>
+                        </div>
+                        <div style="margin: 1px 0px;">
+                            Xudong Sun, <b>Wenqing Luo</b>, Jiawei Tyler Gu, Aishwarya Ganesan, Ramnatthan Alagappan, Michael Gasch, Lalith Suresh, and Tianyin Xu
+                        </div>
+                        <div>
+                            In Proceedings of the 16th USENIX Symposium on Operating Systems Design and Implementation (OSDI'22), Carlsbad, CA, USA, Jul. 2022. (To Appear)
+                        </div>
+                    </div>
+                </v-card>
+                </v-dialog>
+            </div>
+
 
     <!-- <v-row>
         <v-card
@@ -159,6 +177,7 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
 export default {
     data() {
         return {
+            dialog: false,
             education: [
                 {
                     school: "Zhejiang University",
