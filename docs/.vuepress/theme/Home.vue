@@ -29,7 +29,7 @@
                     </p>
 
                     <p>
-                        I was working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a> during the last year, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
+                        I was working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a> during the past year, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
 scenarios like asynchrony, unexpected failures, networking issues, and controller restarts. So far, our project has already discovered (and led to fixes for) more than 30 safety-critical bugs in popular
 Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc. The <a style="cursor: pointer;" @click="dialog = true">Sieve paper</a> was accepted to <a target="_blank" href="https://www.usenix.org/conference/osdi22">OSDI'22</a>!
                     </p>
