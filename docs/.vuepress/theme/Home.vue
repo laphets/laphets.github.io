@@ -31,12 +31,12 @@
                     <p>
                         I was working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a> during the past year, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
 scenarios like asynchrony, unexpected failures, networking issues, and controller restarts. So far, our project has already discovered (and led to fixes for) more than 30 safety-critical bugs in popular
-Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc. The <a style="cursor: pointer;" @click="dialog = true">Sieve paper</a> was accepted to <a target="_blank" href="https://www.usenix.org/conference/osdi22">OSDI'22</a>!
+Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc. The <a style="cursor: pointer;" @click="dialog = true">Sieve paper</a> was accepted to <a target="_blank" href="https://www.usenix.org/conference/osdi22/presentation/sun">OSDI'22</a>!
                     </p>
 
 
                     <p>
-                        I will be joining <a target="_blank" href="https://www.apple.com"></a> as an intern to work on <a target="_blank" href="https://www.apple.com/safari">Safari</a> (and YES <a target="_blank" href="https://webkit.org">WebKit</a>!) for the coming summer.
+                        I spent a wonderful summer at <a target="_blank" href="https://en.wikipedia.org/wiki/Apple_Park"> Park</a> working on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a>. I added support for web extension session storage API in Safari, which was shipped to <a target="_blank" href="https://webkit.org/blog/13093/release-notes-for-safari-technology-preview-151">Safari Technology Preview</a>.
                         <!-- <span style="color: white;"> Switching to use Safari these days ::</span> -->
                     </p>
 
@@ -67,7 +67,7 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                             Xudong Sun, <b>Wenqing Luo</b>, Jiawei Tyler Gu, Aishwarya Ganesan, Ramnatthan Alagappan, Michael Gasch, Lalith Suresh, and Tianyin Xu
                         </div>
                         <div>
-                            In Proceedings of the 16th USENIX Symposium on Operating Systems Design and Implementation (OSDI'22), Carlsbad, CA, USA, Jul. 2022. (To Appear)
+                            In Proceedings of the 16th USENIX Symposium on Operating Systems Design and Implementation (OSDI'22), Carlsbad, CA, USA, Jul. 2022.
                         </div>
                     </div>
                 </v-card>
