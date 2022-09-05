@@ -22,7 +22,7 @@
                     </ul>
                     <h2>About</h2>
                     <p>
-                        I'm Wenqing, a first year M.S. student in the <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a> at <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>.
+                        I'm Wenqing, a second year M.S. student in the <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a> at <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>.
                         I am advised by  <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>.
                         I got my bachelor degree from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a> - <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
                         major in Computer Engineering. 
@@ -36,7 +36,7 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
 
 
                     <p>
-                        I spent a wonderful summer at <a target="_blank" href="https://en.wikipedia.org/wiki/Apple_Park"> Park</a> working on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a>. I added support for web extension session storage API in Safari, which was shipped to <a target="_blank" href="https://webkit.org/blog/13093/release-notes-for-safari-technology-preview-151">Safari Technology Preview</a>.
+                        I spent a wonderful summer at <a target="_blank" href="https://en.wikipedia.org/wiki/Apple_Park"> Park</a> working on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a>. I added support for web extension session storage API in Safari, which was shipped with <a target="_blank" href="https://webkit.org/blog/13093/release-notes-for-safari-technology-preview-151">Safari Technology Preview</a>.
                         <!-- <span style="color: white;"> Switching to use Safari these days ::</span> -->
                     </p>
 
