@@ -16,7 +16,7 @@
   "dependencies": {
     "@octokit/rest": "^16.36.0",
     "@vuepress/plugin-last-updated": "^1.9.7",
-    "cos-js-sdk-v5": "^0.5.22",
+    "cos-js-sdk-v5": "^1.4.6",
     "jssha": "^2.3.1",
     "mavon-editor": "^2.7.7",
     "moment": "^2.24.0",
