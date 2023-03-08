@@ -23,7 +23,7 @@
                     <h2>About</h2>
                     <p>
                         I'm Wenqing, a second year M.S. student in the <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a> at <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>.
-                        I am advised by  <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>.
+                        I am co-advised by <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>, <a target="_blank" href="https://aishwaryaganesan.github.io">Prof. Aishwarya Ganesan</a>, and <a target="_blank" href="https://ramalagappan.github.io">Prof. Ramnatthan Alagappan</a>.
                         I got my bachelor degree from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a> - <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
                         major in Computer Engineering. 
                     </p>
@@ -38,6 +38,11 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                     <p>
                         I spent a wonderful summer at <a target="_blank" href="https://en.wikipedia.org/wiki/Apple_Park"> Park</a> working on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a>. I added support for web extension session storage API in Safari, which was shipped with <a target="_blank" href="https://webkit.org/blog/13093/release-notes-for-safari-technology-preview-151">Safari Technology Preview</a>.
                         <!-- <span style="color: white;"> Switching to use Safari these days ::</span> -->
+                        <!-- Although building products living on billions of devices is definitely interesting and impactful, I believe working on large-scale infrastructure and dealing with complexity of distributed systems would be a better fit for me, and hence, I decided to join <a target="_blank" href="https://www.apple.com"></a> Cloud Infrastructure team after graduation. -->
+                    </p>
+
+                    <p>
+                        I will be back to <a target="_blank" href="https://en.wikipedia.org/wiki/Cupertino,_California">Cupertino</a> and join <a target="_blank" href="https://www.apple.com"></a> Cloud Infrastructure team in this May.
                     </p>
 
                     <p>
@@ -49,7 +54,7 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                         <!-- Also I'm now intern at search engine team  -->
                     </p>
                     <p>
-                        I love open-source, and enjoy the process of building a project which can benefit many others' lives. 
+                        I love open-source, and enjoy the process of building something that can benefit many others' lives. 
                         
                         I'm also a contributor of <a target="_blank" href="https://github.com/microsoft/vscode/pulls?q=is%3Apr+author%3Alaphets">VSCode</a> and <a target="_blank" href="https://hg.mozilla.org/mozilla-central/log?rev=laphets">FireFox</a>. If you are using them, you are running some code written by me :)
                     </p>
