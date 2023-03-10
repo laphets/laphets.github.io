@@ -42,7 +42,7 @@ Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc.
                     </p>
 
                     <p>
-                        I will be back to <a target="_blank" href="https://en.wikipedia.org/wiki/Cupertino,_California">Cupertino</a> and join <a target="_blank" href="https://www.apple.com"></a> Cloud Infrastructure team in this May.
+                        I will be back to <a target="_blank" href="https://en.wikipedia.org/wiki/Cupertino,_California">Cupertino</a> and join <a target="_blank" href="https://www.apple.com"></a> Cloud Infrastructure team starting from the coming summer.
                     </p>
 
                     <p>
