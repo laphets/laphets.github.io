@@ -7592,10 +7592,10 @@
   dependencies:
     "vue-disqus" "^3.0.5"
 
-"vuepress-plugin-google-analytics-4@^0.0.4":
-  "integrity" "sha512-9p98YUcOrcfC3mosJL4duHJKEYhDaRgFvMs8TnY8AglZxo59XJ5QQ+MhiOrxwuHc41yScYh3Jwy02qYXRHRy+g=="
-  "resolved" "https://registry.npmjs.org/vuepress-plugin-google-analytics-4/-/vuepress-plugin-google-analytics-4-0.0.4.tgz"
-  "version" "0.0.4"
+"vuepress-plugin-google-analytics-4@^0.1.0":
+  "integrity" "sha512-PHOQ4XcA8mPmWJdEp10XX/86OMavCmGadS1y1CsAca452Cj3zDalP1mOSVG6ckhOXIgMMavwUxLkgPfZiN/Atg=="
+  "resolved" "https://registry.npmjs.org/vuepress-plugin-google-analytics-4/-/vuepress-plugin-google-analytics-4-0.1.0.tgz"
+  "version" "0.1.0"
   dependencies:
     "@vuepress/types" "1.9.9"
 
