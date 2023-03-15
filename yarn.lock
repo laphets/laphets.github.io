@@ -1162,6 +1162,15 @@
     "@types/webpack-dev-server" "^3"
     "webpack-chain" "^6.0.0"
 
+"@vuepress/types@1.9.9":
+  "integrity" "sha512-ukGW49ILzLhIc7CltHMr+BeIjWKloJNN1mrvbDz3beycp9b9kgH+DXNdRIK9QCKr4fJsy7x08vNMwZr9Nq/PTQ=="
+  "resolved" "https://registry.npmjs.org/@vuepress/types/-/types-1.9.9.tgz"
+  "version" "1.9.9"
+  dependencies:
+    "@types/markdown-it" "^10.0.0"
+    "@types/webpack-dev-server" "^3"
+    "webpack-chain" "^6.0.0"
+
 "@webassemblyjs/ast@1.8.5":
   "integrity" "sha512-aJMfngIZ65+t71C3y2nBBg5FFG0Okt9m0XEgWZ7Ywgn1oMAT8cNwx00Uv1cQyHtidq0Xn94R4TAywO+LCQ+ZAQ=="
   "resolved" "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.8.5.tgz"
@@ -7582,6 +7591,13 @@
   "version" "0.2.0"
   dependencies:
     "vue-disqus" "^3.0.5"
+
+"vuepress-plugin-google-analytics-4@^0.0.4":
+  "integrity" "sha512-9p98YUcOrcfC3mosJL4duHJKEYhDaRgFvMs8TnY8AglZxo59XJ5QQ+MhiOrxwuHc41yScYh3Jwy02qYXRHRy+g=="
+  "resolved" "https://registry.npmjs.org/vuepress-plugin-google-analytics-4/-/vuepress-plugin-google-analytics-4-0.0.4.tgz"
+  "version" "0.0.4"
+  dependencies:
+    "@vuepress/types" "1.9.9"
 
 "vuepress-plugin-smooth-scroll@^0.0.3":
   "integrity" "sha512-qsQkDftLVFLe8BiviIHaLV0Ea38YLZKKonDGsNQy1IE0wllFpFIEldWD8frWZtDFdx6b/O3KDMgVQ0qp5NjJCg=="

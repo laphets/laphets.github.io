@@ -5,9 +5,12 @@ module.exports = {
         'disqus': {
             shortname: 'laphetss-blog'
         },
-        '@vuepress/google-analytics': {
-            'ga': 'UA-166069151-1'
-        },
+        'google-analytics-4': {
+            'gtag': 'G-C6574V3FC8'
+        }
+        // '@vuepress/google-analytics': {
+        //     'ga': 'UA-166069151-1'
+        // },
         // '@vuepress/last-updated': {
 
         // }

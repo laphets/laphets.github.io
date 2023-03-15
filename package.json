@@ -23,6 +23,7 @@
     "thirty-two": "^1.0.2",
     "typed.js": "^2.0.10",
     "vuepress-plugin-disqus": "^0.2.0",
+    "vuepress-plugin-google-analytics-4": "^0.0.4",
     "vuetify": "^2.6.4"
   }
 }
