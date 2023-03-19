@@ -49,7 +49,9 @@
                 </div>
             </div> -->
             <div class="content" style="width: 100%;">
-                <Content/>
+                <div class="medium-zoom-container">
+                    <Content/>
+                </div>
                 <div v-if="$page.frontmatter.comments" style="margin-top:40px;">
                     <Disqus  />
                 </div>

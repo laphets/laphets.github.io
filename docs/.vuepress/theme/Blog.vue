@@ -48,7 +48,7 @@
                                         <div style="color: rgba(0, 0, 0, 0.6); padding: 0px 0px 14px 0px;">{{transTime(post.frontmatter.date)}}</div>
                                         <!-- <div>{{post.excerpt}}</div> -->
                                         <div class="index-content">
-                                            <div v-if="post.excerpt" v-html="post.excerpt"></div>
+                                            <div class="medium-zoom-container" v-if="post.excerpt" v-html="post.excerpt"></div>
                                             <div v-else>No Excerpt</div>
                                         </div>
                                         

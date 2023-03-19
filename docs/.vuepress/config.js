@@ -7,6 +7,14 @@ module.exports = {
         },
         'google-analytics-4': {
             'gtag': 'G-C6574V3FC8'
+        },
+        '@vuepress/medium-zoom': {
+            selector: 'div.medium-zoom-container img',
+            // medium-zoom options here
+            // See: https://github.com/francoischalifour/medium-zoom#options
+            options: {
+                margin: 16,
+            }
         }
         // '@vuepress/google-analytics': {
         //     'ga': 'UA-166069151-1'

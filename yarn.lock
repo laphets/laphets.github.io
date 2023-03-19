@@ -1095,6 +1095,14 @@
     "@vuepress/types" "1.9.7"
     "cross-spawn" "^6.0.5"
 
+"@vuepress/plugin-medium-zoom@^1.9.9":
+  "integrity" "sha512-P8UfqUv0l28Td2COhvhVinBMiHyams8KKQVwnr6ZboFcRVG5xOsghtDbO++jn78rnszOz8OsLXilPMoiJ8iECQ=="
+  "resolved" "https://registry.npmjs.org/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.9.9.tgz"
+  "version" "1.9.9"
+  dependencies:
+    "@vuepress/types" "1.9.9"
+    "medium-zoom" "^1.0.4"
+
 "@vuepress/plugin-nprogress@^1.2.0":
   "integrity" "sha512-0apt3Dp6XVCOkLViX6seKSEJgARihi+pX3/r8j8ndFp9Y+vmgLFZnQnGE5iKNi1ty+A6PZOK0RQcBjwTAU4pAw=="
   "resolved" "https://registry.npmjs.org/@vuepress/plugin-nprogress/-/plugin-nprogress-1.2.0.tgz"
@@ -4816,6 +4824,11 @@
   "integrity" "sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g="
   "resolved" "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz"
   "version" "0.3.0"
+
+"medium-zoom@^1.0.4":
+  "integrity" "sha512-CjFVuFq/IfrdqesAXfg+hzlDKu6A2n80ZIq0Kl9kWjoHh9j1N9Uvk5X0/MmN0hOfm5F9YBswlClhcwnmtwz7gA=="
+  "resolved" "https://registry.npmjs.org/medium-zoom/-/medium-zoom-1.0.8.tgz"
+  "version" "1.0.8"
 
 "mem@^4.0.0":
   "integrity" "sha512-I5u6Q1x7wxO0kdOpYBB28xueHADYps5uty/zg936CiG8NTe5sJL8EjrCuLneuDW3PlMdZBGDIn8BirEVdovZvg=="
