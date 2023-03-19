@@ -1080,6 +1080,14 @@
   dependencies:
     "lodash.debounce" "^4.0.8"
 
+"@vuepress/plugin-back-to-top@^1.9.9":
+  "integrity" "sha512-8bNsdZ0Dr96OdcoJ67dxCx1ysXpeTHma8w+YSsqBJoWGEOucBr0nW9oaDH85yoOtpiriWBlhUO32/Q0ojJtMfA=="
+  "resolved" "https://registry.npmjs.org/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.9.9.tgz"
+  "version" "1.9.9"
+  dependencies:
+    "@vuepress/types" "1.9.9"
+    "lodash.debounce" "^4.0.8"
+
 "@vuepress/plugin-google-analytics@^1.4.1":
   "integrity" "sha512-tuEDq/5xwdK//0W3FZgAGJgTRlgV15fdVm6Nbo/nn2K/O0SmgJd3exybblZCOg2ZiVB8IGDyqzCflINc7u6G8Q=="
   "resolved" "https://registry.npmjs.org/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.9.5.tgz"

@@ -15,7 +15,8 @@ module.exports = {
             options: {
                 margin: 16,
             }
-        }
+        },
+        '@vuepress/back-to-top': {}
         // '@vuepress/google-analytics': {
         //     'ga': 'UA-166069151-1'
         // },
