@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "My Blog",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "main": "index.js",
