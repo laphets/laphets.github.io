@@ -20,29 +20,26 @@
                         <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/wenqingluo">Wenqing Luo</a></li>
                         <li>Blog: <router-link :to="'/blog'">Laphets's Blog</router-link></li>
                     </ul>
-                    <h2>About</h2>
-                    <p>
-                        I'm Wenqing, a second year M.S. student in the <a target="_blank" href="https://cs.illinois.edu"> Department of Computer Science</a> at <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>.
-                        I am co-advised by <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>, <a target="_blank" href="https://aishwaryaganesan.github.io">Prof. Aishwarya Ganesan</a>, and <a target="_blank" href="https://ramalagappan.github.io">Prof. Ramnatthan Alagappan</a>.
-                        I got my bachelor degree from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a> - <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, 
-                        major in Computer Engineering. 
+                    <!-- <h2>About</h2> -->
+                    <p style="margin-top: 20px;">
+                        I'm Wenqing, a software enginner currently working on the cloud infrastructure team at Apple, where I focus on building scalable batch computing systems.
                     </p>
 
                     <p>
-                        I was working on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a> during the past year, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
+                        I received my M.S. in Computer Science from the <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, where I was co-advised by <a target="_blank" href="https://tianyin.github.io">Prof. Tianyin Xu</a>, <a target="_blank" href="https://aishwaryaganesan.github.io">Prof. Aishwarya Ganesan</a>, and <a target="_blank" href="https://ramalagappan.github.io">Prof. Ramnatthan Alagappan</a>. Prior to that, I earned my bachelor's degree from the joint institute of <a target="_blank" href="https://www.zju.edu.cn/english/">Zhejiang University</a> - <a target="_blank" href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>, major in Computer Engineering. 
+                    </p>
+
+                    <p>
+                        During my graduate study, I worked on the <a target="_blank" href="https://github.com/sieve-project/sieve">Sieve project</a>, which systematically tests <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes operators</a> to harden them against
 scenarios like asynchrony, unexpected failures, networking issues, and controller restarts. So far, our project has already discovered (and led to fixes for) more than 30 safety-critical bugs in popular
 Kubernetes controllers for Zookeeper, Cassandra, RabbitMQ, MongoDB, XtraDB, etc. The <a style="cursor: pointer;" @click="dialog = true">Sieve paper</a> was accepted to <a target="_blank" href="https://www.usenix.org/conference/osdi22/presentation/sun">OSDI'22</a>!
                     </p>
 
 
                     <p>
-                        I spent a wonderful summer at <a target="_blank" href="https://en.wikipedia.org/wiki/Apple_Park"> Park</a> working on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a>. I added support for web extension <a target="_blank" href="https://webkit.org/blog/13966/webkit-features-in-safari-16-4/#session-storage">session storage API</a> in Safari, which was shipped with <a target="_blank" href="https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-16_4-release-notes#Safari-Web-Extensions">iOS 16</a> and <a target="_blank" href="https://developer.apple.com/documentation/macos-release-notes/macos-13_3-release-notes#Safari-Web-Extensions">macOS Ventura 13</a>.
+                        I spent a great summer at <a target="_blank" href="https://en.wikipedia.org/wiki/Apple_Park"> Park</a> working on <a target="_blank" href="https://www.apple.com/safari">Safari</a> and <a target="_blank" href="https://webkit.org">WebKit</a>. I added support for web extension <a target="_blank" href="https://webkit.org/blog/13966/webkit-features-in-safari-16-4/#session-storage">session storage API</a> in Safari, which was shipped with <a target="_blank" href="https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-16_4-release-notes#Safari-Web-Extensions">iOS 16</a> and <a target="_blank" href="https://developer.apple.com/documentation/macos-release-notes/macos-13_3-release-notes#Safari-Web-Extensions">macOS Ventura</a>.
                         <!-- <span style="color: white;"> Switching to use Safari these days ::</span> -->
                         <!-- Although building products living on billions of devices is definitely interesting and impactful, I believe working on large-scale infrastructure and dealing with complexity of distributed systems would be a better fit for me, and hence, I decided to join <a target="_blank" href="https://www.apple.com"></a> Cloud Infrastructure team after graduation. -->
-                    </p>
-
-                    <p>
-                        I will be back to <a target="_blank" href="https://en.wikipedia.org/wiki/Cupertino,_California">Cupertino</a> and join <a target="_blank" href="https://www.apple.com"></a> Cloud Infrastructure team starting from the coming summer.
                     </p>
 
                     <p>
