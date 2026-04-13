@@ -4,7 +4,7 @@
   "description": "My Blog",
   "scripts": {
     "docs:dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs"
   },
   "main": "index.js",
   "author": "Laphtes<wenqing4@illinois.edu>",
@@ -15,7 +15,7 @@
     "vuepress": "^1.2.0"
   },
   "dependencies": {
-    "@octokit/rest": "^16.36.0",
+    "@octokit/rest": "^22.0.0",
     "@vuepress/plugin-last-updated": "^1.9.7",
     "@vuepress/plugin-medium-zoom": "^1.9.9",
     "cos-js-sdk-v5": "^0.5.22",
